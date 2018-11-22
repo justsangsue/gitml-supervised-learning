@@ -1,0 +1,13017 @@
+Last login: Sun Sep 23 12:28:09 on ttys001
+Jamess-MacBook-Pro:~ Jphild$ cd /Users/Jphild/Documents/Courses/Georgia\ Tech/Machine\ Learning/Assignment\ 1 
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 NeuralNetworks.py
+Traceback (most recent call last):
+  File "NeuralNetworks.py", line 188, in <module>
+    main()
+  File "NeuralNetworks.py", line 183, in main
+    run_ann()
+  File "NeuralNetworks.py", line 173, in run_ann
+    cv=5, train_sizes=ts)
+  File "/Users/Jphild/Documents/Courses/Georgia Tech/Machine Learning/Assignment 1/utilities.py", line 28, in timed_function
+    output = func(*args, **kwargs)
+  File "NeuralNetworks.py", line 145, in ann_learning_curve
+    n_hidden=n_hidden, n_iter=n_iter)
+  File "/Users/Jphild/Documents/Courses/Georgia Tech/Machine Learning/Assignment 1/utilities.py", line 28, in timed_function
+    output = func(*args, **kwargs)
+  File "NeuralNetworks.py", line 89, in test_ann2
+    train, test = net_data(trainx, trainy, testx, testy)
+  File "NeuralNetworks.py", line 52, in net_data
+    test._convertToOneOfMany()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pybrain/datasets/classification.py", line 144, in _convertToOneOfMany
+    newtarg[i, int(oldtarg[i])] = bounds[1]
+IndexError: index 4 is out of bounds for axis 1 with size 4
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 NeuralNetworks.py
+Traceback (most recent call last):
+  File "NeuralNetworks.py", line 188, in <module>
+    main()
+  File "NeuralNetworks.py", line 183, in main
+    run_ann()
+  File "NeuralNetworks.py", line 173, in run_ann
+    cv=5, train_sizes=ts)
+  File "/Users/Jphild/Documents/Courses/Georgia Tech/Machine Learning/Assignment 1/utilities.py", line 28, in timed_function
+    output = func(*args, **kwargs)
+  File "NeuralNetworks.py", line 145, in ann_learning_curve
+    n_hidden=n_hidden, n_iter=n_iter)
+  File "/Users/Jphild/Documents/Courses/Georgia Tech/Machine Learning/Assignment 1/utilities.py", line 28, in timed_function
+    output = func(*args, **kwargs)
+  File "NeuralNetworks.py", line 89, in test_ann2
+    train, test = net_data(trainx, trainy, testx, testy)
+  File "NeuralNetworks.py", line 52, in net_data
+    test._convertToOneOfMany()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pybrain/datasets/classification.py", line 144, in _convertToOneOfMany
+    newtarg[i, int(oldtarg[i])] = bounds[1]
+IndexError: index 4 is out of bounds for axis 1 with size 4
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 NeuralNetworks.py
+Number of training patterns:  80
+Input and output dimensions:  11 5
+First sample (input, target):
+[35.   43.34  2.    1.    0.    0.    1.    0.    0.    1.    0.  ] [1 0 0 0 0]
+Total error:  0.775692654945
+epoch: 1, train accuracy: 0.5, test accuracy: 0.44607843137254904
+Total error:  0.102374053807
+epoch: 2, train accuracy: 0.625, test accuracy: 0.6078431372549019
+Total error:  0.0650258236036
+epoch: 3, train accuracy: 0.625, test accuracy: 0.6078431372549019
+Total error:  0.0604900041181
+epoch: 4, train accuracy: 0.625, test accuracy: 0.6078431372549019
+Total error:  0.0588567635448
+epoch: 5, train accuracy: 0.625, test accuracy: 0.6078431372549019
+test_ann2 execution time: 0.916030 secs
+training time: 0.9160449504852295 secs
+Number of training patterns:  159
+Input and output dimensions:  11 5
+First sample (input, target):
+[49.    29.925  0.     1.     0.     0.     1.     0.     1.     0.
+  0.   ] [1 0 0 0 0]
+Total error:  0.26413044421
+epoch: 1, train accuracy: 0.6540880503144654, test accuracy: 0.6813725490196079
+Total error:  0.0706181882284
+epoch: 2, train accuracy: 0.660377358490566, test accuracy: 0.7303921568627451
+Total error:  0.0558972836754
+epoch: 3, train accuracy: 0.660377358490566, test accuracy: 0.7303921568627451
+Total error:  0.0522305511267
+epoch: 4, train accuracy: 0.660377358490566, test accuracy: 0.7303921568627451
+Total error:  0.0506447169935
+epoch: 5, train accuracy: 0.660377358490566, test accuracy: 0.7303921568627451
+test_ann2 execution time: 1.309722 secs
+training time: 1.3097407817840576 secs
+Number of training patterns:  239
+Input and output dimensions:  11 5
+First sample (input, target):
+[41.  31.6  0.   1.   0.   0.   1.   0.   0.   0.   1. ] [1 0 0 0 0]
+Total error:  0.228378577672
+epoch: 1, train accuracy: 0.6903765690376569, test accuracy: 0.6764705882352942
+Total error:  0.0563991755964
+epoch: 2, train accuracy: 0.6903765690376569, test accuracy: 0.6764705882352942
+Total error:  0.0521972228462
+epoch: 3, train accuracy: 0.6903765690376569, test accuracy: 0.6764705882352942
+Total error:  0.0501806947211
+epoch: 4, train accuracy: 0.6401673640167364, test accuracy: 0.6078431372549019
+Total error:  0.0489739504258
+epoch: 5, train accuracy: 0.6903765690376569, test accuracy: 0.6764705882352942
+test_ann2 execution time: 1.773127 secs
+training time: 1.7731499671936035 secs
+Number of training patterns:  318
+Input and output dimensions:  11 5
+First sample (input, target):
+[63.  37.7  0.   1.   0.   1.   0.   0.   0.   0.   1. ] [0 0 0 1 0]
+Total error:  0.141798894305
+epoch: 1, train accuracy: 0.6477987421383647, test accuracy: 0.6127450980392157
+Total error:  0.0553729527097
+epoch: 2, train accuracy: 0.6383647798742138, test accuracy: 0.6078431372549019
+Total error:  0.0521658695309
+epoch: 3, train accuracy: 0.6383647798742138, test accuracy: 0.6078431372549019
+Total error:  0.0507375599886
+epoch: 4, train accuracy: 0.6477987421383647, test accuracy: 0.6176470588235294
+Total error:  0.0497277990239
+epoch: 5, train accuracy: 0.6477987421383647, test accuracy: 0.6176470588235294
+test_ann2 execution time: 2.161756 secs
+training time: 2.161777973175049 secs
+Number of training patterns:  398
+Input and output dimensions:  11 5
+First sample (input, target):
+[26.    27.265  3.     0.     1.     0.     1.     1.     0.     0.
+  0.   ] [1 0 0 0 0]
+Total error:  0.164108701788
+epoch: 1, train accuracy: 0.6658291457286433, test accuracy: 0.6078431372549019
+Total error:  0.0528929937017
+epoch: 2, train accuracy: 0.6658291457286433, test accuracy: 0.6078431372549019
+Total error:  0.051194030141
+epoch: 3, train accuracy: 0.6658291457286433, test accuracy: 0.6078431372549019
+Total error:  0.0510066089501
+epoch: 4, train accuracy: 0.6658291457286433, test accuracy: 0.6078431372549019
+Total error:  0.0505767426474
+epoch: 5, train accuracy: 0.6658291457286433, test accuracy: 0.6078431372549019
+test_ann2 execution time: 2.702532 secs
+training time: 2.702547073364258 secs
+Number of training patterns:  478
+Input and output dimensions:  11 5
+First sample (input, target):
+[59.   25.46  1.    0.    1.    0.    1.    1.    0.    0.    0.  ] [0 1 0 0 0]
+Total error:  0.0973592556621
+epoch: 1, train accuracy: 0.6652719665271967, test accuracy: 0.6078431372549019
+Total error:  0.0517481922313
+epoch: 2, train accuracy: 0.6652719665271967, test accuracy: 0.6078431372549019
+Total error:  0.0510415061616
+epoch: 3, train accuracy: 0.6652719665271967, test accuracy: 0.6078431372549019
+Total error:  0.0505932733375
+epoch: 4, train accuracy: 0.6652719665271967, test accuracy: 0.6078431372549019
+Total error:  0.050144422161
+epoch: 5, train accuracy: 0.6652719665271967, test accuracy: 0.6078431372549019
+test_ann2 execution time: 3.056526 secs
+training time: 3.0565481185913086 secs
+Number of training patterns:  557
+Input and output dimensions:  11 5
+First sample (input, target):
+[32.   30.03  1.    0.    1.    0.    1.    0.    0.    1.    0.  ] [1 0 0 0 0]
+Total error:  0.0902082524229
+epoch: 1, train accuracy: 0.7271095152603232, test accuracy: 0.7254901960784313
+Total error:  0.0450621132353
+epoch: 2, train accuracy: 0.7271095152603232, test accuracy: 0.7254901960784313
+Total error:  0.0430141441922
+epoch: 3, train accuracy: 0.7307001795332136, test accuracy: 0.7254901960784313
+Total error:  0.0417355744996
+epoch: 4, train accuracy: 0.7289048473967684, test accuracy: 0.7254901960784313
+Total error:  0.0409723171216
+epoch: 5, train accuracy: 0.7307001795332136, test accuracy: 0.7254901960784313
+test_ann2 execution time: 3.898861 secs
+training time: 3.898883104324341 secs
+Number of training patterns:  637
+Input and output dimensions:  11 5
+First sample (input, target):
+[44.   30.69  2.    0.    1.    0.    1.    0.    0.    1.    0.  ] [1 0 0 0 0]
+Total error:  0.0785743408924
+epoch: 1, train accuracy: 0.7017268445839875, test accuracy: 0.6519607843137255
+Total error:  0.0429255433163
+epoch: 2, train accuracy: 0.7394034536891679, test accuracy: 0.6911764705882353
+Total error:  0.0409671076823
+epoch: 3, train accuracy: 0.7394034536891679, test accuracy: 0.6911764705882353
+Total error:  0.0398525620606
+epoch: 4, train accuracy: 0.7394034536891679, test accuracy: 0.6911764705882353
+Total error:  0.0391633668521
+epoch: 5, train accuracy: 0.7394034536891679, test accuracy: 0.6911764705882353
+test_ann2 execution time: 3.896870 secs
+training time: 3.896885871887207 secs
+Number of training patterns:  716
+Input and output dimensions:  11 5
+First sample (input, target):
+[43.    30.115  3.     0.     1.     0.     1.     0.     1.     0.
+  0.   ] [1 0 0 0 0]
+Total error:  0.0721120181457
+epoch: 1, train accuracy: 0.6606145251396648, test accuracy: 0.6078431372549019
+Total error:  0.0528602757321
+epoch: 2, train accuracy: 0.6606145251396648, test accuracy: 0.6078431372549019
+Total error:  0.0521537261591
+epoch: 3, train accuracy: 0.6606145251396648, test accuracy: 0.6078431372549019
+Total error:  0.0517593521802
+epoch: 4, train accuracy: 0.6606145251396648, test accuracy: 0.6078431372549019
+Total error:  0.0511908372041
+epoch: 5, train accuracy: 0.6606145251396648, test accuracy: 0.6078431372549019
+test_ann2 execution time: 4.330533 secs
+training time: 4.330552101135254 secs
+Number of training patterns:  796
+Input and output dimensions:  11 5
+First sample (input, target):
+[23.    23.845  0.     0.     1.     0.     1.     1.     0.     0.
+  0.   ] [1 0 0 0 0]
+Total error:  0.158324583788
+epoch: 1, train accuracy: 0.7022613065326633, test accuracy: 0.6617647058823529
+Total error:  0.0481921441694
+epoch: 2, train accuracy: 0.7022613065326633, test accuracy: 0.6617647058823529
+Total error:  0.0467003966744
+epoch: 3, train accuracy: 0.7374371859296482, test accuracy: 0.6862745098039216
+Total error:  0.0462981175064
+epoch: 4, train accuracy: 0.7085427135678392, test accuracy: 0.7058823529411765
+Total error:  0.0451562853481
+epoch: 5, train accuracy: 0.7022613065326633, test accuracy: 0.6617647058823529
+test_ann2 execution time: 4.739491 secs
+training time: 4.739511728286743 secs
+Traceback (most recent call last):
+  File "NeuralNetworks.py", line 188, in <module>
+    main()
+  File "NeuralNetworks.py", line 183, in main
+    run_ann()
+  File "NeuralNetworks.py", line 173, in run_ann
+    cv=5, train_sizes=ts)
+  File "/Users/Jphild/Documents/Courses/Georgia Tech/Machine Learning/Assignment 1/utilities.py", line 28, in timed_function
+    output = func(*args, **kwargs)
+  File "NeuralNetworks.py", line 145, in ann_learning_curve
+    n_hidden=n_hidden, n_iter=n_iter)
+  File "/Users/Jphild/Documents/Courses/Georgia Tech/Machine Learning/Assignment 1/utilities.py", line 28, in timed_function
+    output = func(*args, **kwargs)
+  File "NeuralNetworks.py", line 89, in test_ann2
+    train, test = net_data(trainx, trainy, testx, testy)
+  File "NeuralNetworks.py", line 52, in net_data
+    test._convertToOneOfMany()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pybrain/datasets/classification.py", line 144, in _convertToOneOfMany
+    newtarg[i, int(oldtarg[i])] = bounds[1]
+IndexError: index 4 is out of bounds for axis 1 with size 4
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 NeuralNetworks.py
+2
+0
+1
+1
+2
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+0
+3
+0
+2
+0
+2
+0
+3
+0
+1
+0
+0
+2
+0
+0
+0
+0
+0
+0
+2
+0
+0
+2
+3
+0
+0
+2
+0
+0
+1
+0
+0
+3
+0
+2
+2
+0
+0
+0
+1
+4
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+0
+0
+0
+2
+0
+0
+0
+0
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+1
+0
+2
+0
+0
+1
+0
+0
+1
+3
+0
+1
+0
+1
+0
+0
+0
+0
+0
+0
+0
+2
+0
+1
+0
+1
+2
+0
+1
+0
+1
+0
+0
+0
+3
+1
+0
+0
+1
+0
+0
+0
+0
+0
+0
+3
+0
+0
+0
+2
+1
+0
+0
+1
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+4
+0
+0
+0
+0
+0
+1
+3
+1
+0
+0
+3
+1
+0
+0
+0
+0
+0
+0
+0
+1
+0
+0
+0
+0
+2
+0
+3
+0
+0
+0
+0
+1
+2
+1
+3
+1
+0
+3
+0
+0
+1
+3
+0
+0
+0
+0
+1
+0
+1
+1
+0
+0
+1
+0
+1
+0
+0
+3
+4
+0
+1
+0
+0
+0
+0
+1
+0
+0
+1
+0
+0
+1
+1
+2
+3
+0
+0
+3
+2
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+1
+1
+1
+0
+0
+3
+0
+1
+1
+1
+3
+1
+0
+1
+0
+1
+0
+0
+0
+2
+3
+0
+1
+0
+0
+0
+0
+0
+0
+0
+3
+0
+2
+1
+1
+0
+0
+3
+0
+0
+0
+1
+0
+0
+1
+2
+1
+1
+0
+0
+2
+0
+0
+0
+0
+0
+3
+0
+0
+3
+0
+0
+0
+0
+1
+0
+0
+1
+1
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+2
+0
+1
+2
+0
+1
+0
+3
+0
+1
+0
+2
+2
+3
+0
+1
+0
+2
+0
+0
+2
+0
+0
+1
+0
+1
+1
+1
+0
+0
+1
+2
+1
+0
+3
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+0
+1
+1
+0
+1
+2
+0
+0
+0
+3
+1
+0
+0
+0
+0
+0
+1
+0
+0
+2
+0
+1
+0
+2
+0
+0
+0
+2
+1
+1
+0
+3
+1
+0
+0
+0
+0
+2
+2
+1
+0
+0
+0
+0
+3
+0
+0
+1
+0
+1
+2
+0
+1
+1
+0
+0
+0
+1
+0
+2
+0
+0
+0
+0
+1
+0
+3
+3
+0
+0
+1
+0
+2
+0
+1
+0
+0
+0
+2
+1
+3
+0
+0
+1
+0
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+0
+3
+3
+0
+0
+0
+0
+0
+0
+2
+0
+0
+0
+0
+2
+2
+0
+0
+0
+1
+1
+0
+0
+0
+0
+0
+0
+0
+1
+0
+0
+0
+0
+0
+0
+0
+1
+2
+0
+0
+1
+0
+0
+2
+0
+0
+1
+1
+1
+0
+0
+0
+1
+0
+0
+0
+2
+1
+0
+0
+0
+2
+2
+0
+0
+1
+0
+0
+1
+0
+0
+0
+0
+0
+0
+2
+0
+1
+0
+0
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+3
+0
+0
+0
+0
+1
+0
+0
+1
+1
+0
+3
+0
+0
+0
+0
+0
+0
+1
+0
+1
+0
+2
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+3
+0
+3
+0
+1
+0
+3
+1
+3
+0
+0
+0
+0
+0
+0
+0
+0
+0
+3
+0
+0
+0
+0
+0
+0
+0
+0
+0
+2
+0
+0
+1
+0
+0
+3
+0
+0
+0
+0
+1
+0
+0
+0
+2
+1
+0
+0
+0
+0
+3
+0
+2
+1
+0
+3
+0
+0
+2
+0
+0
+0
+0
+3
+0
+0
+1
+0
+1
+0
+0
+0
+2
+0
+0
+0
+1
+0
+0
+0
+0
+0
+1
+0
+0
+0
+1
+0
+0
+2
+0
+3
+0
+1
+0
+0
+0
+0
+2
+1
+0
+3
+1
+0
+0
+1
+0
+0
+3
+0
+0
+0
+3
+1
+0
+0
+3
+0
+2
+0
+3
+3
+1
+0
+3
+0
+1
+0
+0
+3
+1
+1
+0
+0
+1
+0
+0
+0
+1
+3
+0
+0
+0
+0
+1
+0
+0
+0
+0
+3
+0
+0
+0
+2
+3
+0
+0
+3
+0
+1
+0
+0
+0
+1
+0
+0
+0
+3
+0
+1
+0
+0
+0
+1
+0
+0
+0
+0
+0
+0
+2
+0
+2
+0
+1
+1
+0
+0
+0
+0
+0
+1
+0
+1
+0
+1
+3
+0
+0
+1
+1
+0
+0
+0
+3
+0
+0
+0
+0
+0
+0
+0
+1
+0
+2
+0
+0
+0
+0
+2
+1
+1
+0
+1
+1
+0
+0
+0
+0
+0
+0
+0
+1
+0
+0
+0
+0
+1
+1
+0
+0
+0
+0
+0
+0
+3
+0
+0
+0
+0
+0
+0
+0
+3
+3
+0
+0
+0
+3
+0
+0
+0
+0
+3
+1
+2
+1
+3
+0
+0
+1
+2
+1
+0
+0
+0
+1
+0
+0
+1
+0
+0
+1
+0
+0
+0
+0
+0
+0
+2
+0
+1
+3
+1
+3
+0
+1
+0
+0
+0
+0
+0
+0
+2
+0
+0
+0
+0
+0
+1
+0
+1
+1
+0
+0
+1
+0
+0
+0
+1
+1
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+0
+0
+1
+0
+1
+0
+0
+0
+0
+0
+2
+0
+0
+0
+0
+0
+0
+1
+3
+0
+0
+0
+0
+0
+1
+0
+0
+1
+0
+1
+1
+1
+0
+0
+0
+0
+0
+0
+0
+1
+1
+0
+0
+1
+3
+0
+0
+1
+3
+1
+1
+0
+0
+0
+0
+0
+3
+0
+0
+1
+0
+0
+0
+0
+1
+3
+0
+1
+0
+0
+3
+1
+0
+0
+0
+0
+0
+0
+3
+3
+0
+0
+0
+1
+0
+1
+0
+0
+1
+2
+1
+0
+0
+0
+2
+0
+1
+0
+0
+0
+0
+0
+0
+3
+0
+2
+0
+0
+1
+0
+0
+0
+0
+3
+0
+0
+0
+3
+0
+1
+0
+0
+0
+2
+0
+2
+0
+1
+0
+3
+0
+0
+0
+1
+0
+0
+0
+1
+0
+0
+1
+1
+0
+0
+1
+2
+1
+3
+0
+0
+0
+0
+1
+0
+1
+0
+0
+1
+1
+0
+2
+0
+0
+0
+1
+3
+3
+2
+0
+0
+2
+0
+3
+0
+0
+0
+0
+0
+0
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+3
+0
+3
+0
+1
+1
+0
+2
+2
+0
+0
+3
+0
+1
+0
+3
+0
+0
+0
+1
+0
+1
+1
+0
+0
+0
+0
+0
+0
+0
+1
+0
+3
+3
+0
+0
+1
+0
+0
+0
+0
+0
+3
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+3
+2
+1
+1
+0
+0
+3
+0
+0
+0
+0
+0
+0
+1
+0
+0
+0
+0
+0
+0
+1
+0
+2
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+0
+1
+0
+0
+0
+0
+1
+1
+0
+1
+3
+0
+0
+0
+0
+0
+1
+0
+0
+0
+1
+2
+0
+1
+0
+0
+0
+0
+0
+0
+0
+2
+0
+0
+0
+0
+0
+2
+1
+1
+0
+0
+0
+0
+0
+0
+2
+3
+0
+0
+0
+2
+0
+0
+1
+0
+0
+0
+2
+1
+3
+0
+0
+2
+0
+3
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+2
+0
+0
+1
+0
+1
+0
+0
+0
+2
+0
+1
+3
+1
+3
+1
+0
+1
+3
+0
+0
+1
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+2
+0
+0
+1
+2
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+1
+3
+1
+0
+1
+0
+0
+0
+1
+0
+0
+2
+0
+0
+1
+0
+1
+2
+0
+0
+0
+3
+3
+3
+2
+0
+0
+1
+2
+1
+0
+0
+0
+2
+1
+4
+3
+0
+0
+0
+3
+0
+0
+0
+0
+0
+0
+0
+3
+0
+2
+0
+0
+0
+0
+1
+0
+1
+0
+0
+0
+3
+1
+1
+1
+2
+1
+0
+0
+0
+1
+0
+1
+2
+0
+0
+0
+0
+1
+0
+0
+1
+1
+0
+1
+2
+3
+0
+3
+2
+0
+0
+1
+0
+3
+2
+0
+0
+1
+1
+0
+0
+2
+0
+1
+3
+3
+3
+1
+3
+1
+0
+1
+3
+1
+0
+0
+0
+0
+0
+2
+3
+1
+3
+1
+0
+3
+2
+0
+0
+1
+1
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+0
+0
+0
+0
+0
+0
+1
+0
+1
+1
+3
+2
+0
+1
+0
+1
+1
+0
+0
+0
+0
+2
+1
+0
+2
+0
+1
+1
+0
+1
+1
+0
+0
+0
+1
+0
+0
+3
+2
+0
+3
+0
+0
+1
+0
+0
+0
+0
+2
+3
+0
+1
+1
+0
+1
+0
+1
+0
+0
+2
+1
+0
+0
+0
+3
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+3
+0
+0
+1
+0
+0
+0
+0
+0
+0
+1
+0
+0
+1
+1
+0
+3
+1
+0
+3
+0
+0
+0
+0
+0
+0
+3
+1
+1
+0
+0
+0
+0
+1
+0
+2
+1
+1
+0
+0
+0
+0
+0
+1
+0
+0
+1
+2
+0
+2
+1
+0
+0
+2
+0
+0
+1
+0
+0
+1
+0
+0
+0
+1
+0
+2
+0
+0
+3
+0
+0
+1
+0
+0
+1
+0
+0
+1
+0
+2
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+0
+0
+0
+0
+0
+0
+3
+0
+2
+0
+0
+0
+0
+1
+1
+0
+0
+0
+1
+0
+0
+0
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+3
+4
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+3
+0
+0
+0
+0
+1
+0
+1
+0
+1
+0
+0
+0
+2
+0
+0
+3
+0
+1
+0
+0
+0
+0
+3
+2
+0
+0
+0
+0
+0
+1
+2
+2
+0
+0
+0
+0
+0
+0
+0
+1
+2
+0
+3
+0
+0
+0
+0
+2
+1
+2
+1
+0
+0
+0
+3
+0
+0
+1
+0
+0
+0
+1
+0
+1
+0
+0
+0
+0
+0
+1
+2
+0
+0
+1
+0
+0
+1
+1
+0
+1
+1
+0
+0
+0
+0
+3
+3
+3
+0
+0
+0
+0
+0
+1
+0
+3
+0
+1
+2
+0
+0
+1
+0
+0
+0
+0
+2
+0
+0
+0
+0
+0
+0
+0
+0
+4
+1
+1
+3
+1
+2
+2
+0
+1
+0
+0
+0
+0
+0
+2
+0
+0
+0
+1
+2
+0
+1
+0
+1
+0
+3
+0
+0
+0
+0
+0
+1
+0
+0
+0
+0
+0
+0
+0
+1
+1
+0
+1
+0
+0
+1
+0
+0
+0
+3
+0
+0
+1
+0
+0
+2
+1
+0
+0
+3
+0
+0
+2
+3
+0
+0
+0
+0
+0
+0
+0
+3
+0
+2
+1
+0
+3
+0
+2
+0
+1
+0
+1
+1
+0
+0
+0
+0
+1
+0
+2
+0
+1
+0
+0
+0
+2
+0
+0
+0
+1
+1
+1
+0
+2
+1
+0
+0
+0
+1
+0
+2
+1
+0
+0
+2
+1
+0
+0
+0
+0
+0
+0
+1
+0
+0
+3
+3
+0
+0
+2
+0
+0
+0
+1
+0
+2
+0
+0
+3
+0
+1
+0
+0
+1
+Traceback (most recent call last):
+  File "NeuralNetworks.py", line 188, in <module>
+    main()
+  File "NeuralNetworks.py", line 183, in main
+    run_ann()
+  File "NeuralNetworks.py", line 173, in run_ann
+    cv=5, train_sizes=ts)
+  File "/Users/Jphild/Documents/Courses/Georgia Tech/Machine Learning/Assignment 1/utilities.py", line 28, in timed_function
+    output = func(*args, **kwargs)
+  File "NeuralNetworks.py", line 145, in ann_learning_curve
+    n_hidden=n_hidden, n_iter=n_iter)
+  File "/Users/Jphild/Documents/Courses/Georgia Tech/Machine Learning/Assignment 1/utilities.py", line 28, in timed_function
+    output = func(*args, **kwargs)
+  File "NeuralNetworks.py", line 89, in test_ann2
+    train, test = net_data(trainx, trainy, testx, testy)
+  File "NeuralNetworks.py", line 52, in net_data
+    test._convertToOneOfMany()
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pybrain/datasets/classification.py", line 144, in _convertToOneOfMany
+    newtarg[i, int(oldtarg[i])] = bounds[1]
+IndexError: index 4 is out of bounds for axis 1 with size 4
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 NeuralNetworks.py
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  82
+Input and output dimensions:  11 4
+First sample (input, target):
+[33.    35.245  0.     0.     1.     0.     1.     1.     0.     0.
+  0.   ] [1 0 0 0]
+Total error:  0.260566355629
+epoch: 1, train accuracy: 0.12195121951219512, test accuracy: 0.11413043478260869
+Total error:  0.11441753705
+epoch: 2, train accuracy: 0.6707317073170732, test accuracy: 0.6630434782608695
+Total error:  0.0789110093027
+epoch: 3, train accuracy: 0.6707317073170732, test accuracy: 0.6630434782608695
+Total error:  0.0689129444156
+epoch: 4, train accuracy: 0.6707317073170732, test accuracy: 0.6630434782608695
+Total error:  0.0643647658018
+epoch: 5, train accuracy: 0.6707317073170732, test accuracy: 0.6630434782608695
+test_ann2 execution time: 0.969233 secs
+training time: 0.9692533016204834 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  163
+Input and output dimensions:  11 5
+First sample (input, target):
+[18.   21.78  2.    0.    1.    0.    1.    0.    0.    1.    0.  ] [1 0 0 0 0]
+Total error:  0.252185788449
+epoch: 1, train accuracy: 0.6319018404907976, test accuracy: 0.6467391304347826
+Total error:  0.0709452208916
+epoch: 2, train accuracy: 0.6319018404907976, test accuracy: 0.6304347826086957
+Total error:  0.0574398423982
+epoch: 3, train accuracy: 0.6319018404907976, test accuracy: 0.6304347826086957
+Total error:  0.0548524380474
+epoch: 4, train accuracy: 0.6319018404907976, test accuracy: 0.6304347826086957
+Total error:  0.0537264347392
+epoch: 5, train accuracy: 0.6319018404907976, test accuracy: 0.6304347826086957
+test_ann2 execution time: 1.371110 secs
+training time: 1.3711302280426025 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  245
+Input and output dimensions:  11 5
+First sample (input, target):
+[21.  31.1  0.   0.   1.   0.   1.   0.   0.   0.   1. ] [1 0 0 0 0]
+Total error:  0.263796087944
+epoch: 1, train accuracy: 0.7224489795918367, test accuracy: 0.6739130434782609
+Total error:  0.056274762503
+epoch: 2, train accuracy: 0.6775510204081633, test accuracy: 0.6304347826086957
+Total error:  0.0524272211455
+epoch: 3, train accuracy: 0.6775510204081633, test accuracy: 0.6304347826086957
+Total error:  0.0512205777211
+epoch: 4, train accuracy: 0.6775510204081633, test accuracy: 0.6304347826086957
+Total error:  0.0504407901692
+epoch: 5, train accuracy: 0.6775510204081633, test accuracy: 0.6304347826086957
+test_ann2 execution time: 1.793246 secs
+training time: 1.793267011642456 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  326
+Input and output dimensions:  11 5
+First sample (input, target):
+[56.    28.785  0.     1.     0.     0.     1.     1.     0.     0.
+  0.   ] [1 0 0 0 0]
+Total error:  0.191292414652
+epoch: 1, train accuracy: 0.6625766871165644, test accuracy: 0.6521739130434783
+Total error:  0.053052824895
+epoch: 2, train accuracy: 0.7085889570552147, test accuracy: 0.6684782608695652
+Total error:  0.0454416167671
+epoch: 3, train accuracy: 0.7269938650306749, test accuracy: 0.7010869565217391
+Total error:  0.0431299370866
+epoch: 4, train accuracy: 0.7423312883435583, test accuracy: 0.717391304347826
+Total error:  0.0421682274859
+epoch: 5, train accuracy: 0.7423312883435583, test accuracy: 0.717391304347826
+test_ann2 execution time: 2.280583 secs
+training time: 2.2806031703948975 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  408
+Input and output dimensions:  11 5
+First sample (input, target):
+[51.  39.7  1.   0.   1.   0.   1.   0.   0.   0.   1. ] [1 0 0 0 0]
+Total error:  0.12175617166
+epoch: 1, train accuracy: 0.6666666666666666, test accuracy: 0.6630434782608695
+Total error:  0.0516885521551
+epoch: 2, train accuracy: 0.6666666666666666, test accuracy: 0.6630434782608695
+Total error:  0.0507575224665
+epoch: 3, train accuracy: 0.6470588235294118, test accuracy: 0.6304347826086957
+Total error:  0.0506924654666
+epoch: 4, train accuracy: 0.6666666666666666, test accuracy: 0.6630434782608695
+Total error:  0.0503130552169
+epoch: 5, train accuracy: 0.6666666666666666, test accuracy: 0.6630434782608695
+test_ann2 execution time: 2.994833 secs
+training time: 2.9948527812957764 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  490
+Input and output dimensions:  11 5
+First sample (input, target):
+[24.   35.86  0.    0.    1.    0.    1.    0.    0.    1.    0.  ] [1 0 0 0 0]
+Total error:  0.172990249058
+epoch: 1, train accuracy: 0.6755102040816326, test accuracy: 0.6467391304347826
+Total error:  0.04686404639
+epoch: 2, train accuracy: 0.6591836734693878, test accuracy: 0.6304347826086957
+Total error:  0.044943405362
+epoch: 3, train accuracy: 0.7061224489795919, test accuracy: 0.6684782608695652
+Total error:  0.0435029307342
+epoch: 4, train accuracy: 0.7061224489795919, test accuracy: 0.6684782608695652
+Total error:  0.0424142312005
+epoch: 5, train accuracy: 0.753061224489796, test accuracy: 0.7010869565217391
+test_ann2 execution time: 3.093711 secs
+training time: 3.0937271118164062 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  571
+Input and output dimensions:  11 5
+First sample (input, target):
+[64.   33.88  0.    0.    1.    1.    0.    0.    0.    1.    0.  ] [0 0 0 1 0]
+Total error:  0.106067134865
+epoch: 1, train accuracy: 0.7057793345008757, test accuracy: 0.6793478260869565
+Total error:  0.0460302604157
+epoch: 2, train accuracy: 0.7110332749562172, test accuracy: 0.6793478260869565
+Total error:  0.0443452147337
+epoch: 3, train accuracy: 0.7162872154115587, test accuracy: 0.6847826086956522
+Total error:  0.0428490587419
+epoch: 4, train accuracy: 0.7215411558669002, test accuracy: 0.6847826086956522
+Total error:  0.0417551735915
+epoch: 5, train accuracy: 0.7302977232924693, test accuracy: 0.6902173913043478
+test_ann2 execution time: 3.314193 secs
+training time: 3.3142178058624268 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  653
+Input and output dimensions:  11 5
+First sample (input, target):
+[27.    31.255  1.     1.     0.     0.     1.     0.     1.     0.
+  0.   ] [1 0 0 0 0]
+Total error:  0.0990078985157
+epoch: 1, train accuracy: 0.6523736600306279, test accuracy: 0.6304347826086957
+Total error:  0.0541945940624
+epoch: 2, train accuracy: 0.6523736600306279, test accuracy: 0.6304347826086957
+Total error:  0.0525341593654
+epoch: 3, train accuracy: 0.6523736600306279, test accuracy: 0.6304347826086957
+Total error:  0.0507889688834
+epoch: 4, train accuracy: 0.6523736600306279, test accuracy: 0.6304347826086957
+Total error:  0.0489165037763
+epoch: 5, train accuracy: 0.6768759571209801, test accuracy: 0.6358695652173914
+test_ann2 execution time: 3.766848 secs
+training time: 3.7668750286102295 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  734
+Input and output dimensions:  11 5
+First sample (input, target):
+[51.   27.74  1.    0.    1.    0.    1.    1.    0.    0.    0.  ] [1 0 0 0 0]
+Total error:  0.0935846517199
+epoch: 1, train accuracy: 0.6539509536784741, test accuracy: 0.6304347826086957
+Total error:  0.0527246678011
+epoch: 2, train accuracy: 0.6539509536784741, test accuracy: 0.6304347826086957
+Total error:  0.0524790451083
+epoch: 3, train accuracy: 0.6539509536784741, test accuracy: 0.6304347826086957
+Total error:  0.0524132227699
+epoch: 4, train accuracy: 0.6539509536784741, test accuracy: 0.6304347826086957
+Total error:  0.0522275390496
+epoch: 5, train accuracy: 0.6539509536784741, test accuracy: 0.6304347826086957
+test_ann2 execution time: 5.017489 secs
+training time: 5.01751184463501 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  816
+Input and output dimensions:  11 5
+First sample (input, target):
+[27.    33.155  2.     0.     1.     0.     1.     0.     1.     0.
+  0.   ] [1 0 0 0 0]
+Total error:  0.0876669044593
+epoch: 1, train accuracy: 0.6862745098039216, test accuracy: 0.6739130434782609
+Total error:  0.0466536611668
+epoch: 2, train accuracy: 0.7377450980392157, test accuracy: 0.7010869565217391
+Total error:  0.0412391434449
+epoch: 3, train accuracy: 0.7279411764705882, test accuracy: 0.6847826086956522
+Total error:  0.0394307184317
+epoch: 4, train accuracy: 0.7389705882352942, test accuracy: 0.7010869565217391
+Total error:  0.0387689490911
+epoch: 5, train accuracy: 0.7377450980392157, test accuracy: 0.6847826086956522
+test_ann2 execution time: 4.615424 secs
+training time: 4.615447044372559 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  82
+Input and output dimensions:  11 5
+First sample (input, target):
+[40.    30.875  4.     0.     1.     0.     1.     0.     1.     0.
+  0.   ] [1 0 0 0 0]
+Total error:  0.49628528872
+epoch: 1, train accuracy: 0.5609756097560976, test accuracy: 0.5489130434782609
+Total error:  0.101826514204
+epoch: 2, train accuracy: 0.5853658536585366, test accuracy: 0.6032608695652174
+Total error:  0.06833758013
+epoch: 3, train accuracy: 0.6463414634146342, test accuracy: 0.6358695652173914
+Total error:  0.0588306879198
+epoch: 4, train accuracy: 0.6463414634146342, test accuracy: 0.6467391304347826
+Total error:  0.0546324761088
+epoch: 5, train accuracy: 0.6463414634146342, test accuracy: 0.6358695652173914
+test_ann2 execution time: 0.794173 secs
+training time: 0.7941937446594238 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  163
+Input and output dimensions:  11 5
+First sample (input, target):
+[30.  27.7  0.   1.   0.   0.   1.   0.   0.   0.   1. ] [1 0 0 0 0]
+Total error:  0.363262697233
+epoch: 1, train accuracy: 0.7361963190184049, test accuracy: 0.6358695652173914
+Total error:  0.0556862710076
+epoch: 2, train accuracy: 0.7177914110429447, test accuracy: 0.6304347826086957
+Total error:  0.0468178907437
+epoch: 3, train accuracy: 0.7177914110429447, test accuracy: 0.6304347826086957
+Total error:  0.045491305699
+epoch: 4, train accuracy: 0.7177914110429447, test accuracy: 0.6304347826086957
+Total error:  0.0449713600738
+epoch: 5, train accuracy: 0.7177914110429447, test accuracy: 0.6304347826086957
+test_ann2 execution time: 1.208219 secs
+training time: 1.2082390785217285 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  245
+Input and output dimensions:  11 5
+First sample (input, target):
+[21.  17.4  1.   1.   0.   0.   1.   0.   0.   0.   1. ] [1 0 0 0 0]
+Total error:  0.178494179179
+epoch: 1, train accuracy: 0.6489795918367347, test accuracy: 0.6630434782608695
+Total error:  0.0606556111332
+epoch: 2, train accuracy: 0.6408163265306123, test accuracy: 0.6413043478260869
+Total error:  0.056977750243
+epoch: 3, train accuracy: 0.6489795918367347, test accuracy: 0.6413043478260869
+Total error:  0.0555331293897
+epoch: 4, train accuracy: 0.6408163265306123, test accuracy: 0.6413043478260869
+Total error:  0.0550218854987
+epoch: 5, train accuracy: 0.6408163265306123, test accuracy: 0.6413043478260869
+test_ann2 execution time: 1.590511 secs
+training time: 1.5905389785766602 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  326
+Input and output dimensions:  11 5
+First sample (input, target):
+[50.   28.16  3.    1.    0.    0.    1.    0.    0.    1.    0.  ] [1 0 0 0 0]
+Total error:  0.373171084535
+epoch: 1, train accuracy: 0.6288343558282209, test accuracy: 0.625
+Total error:  0.0554793480501
+epoch: 2, train accuracy: 0.6288343558282209, test accuracy: 0.625
+Total error:  0.0523769729372
+epoch: 3, train accuracy: 0.6288343558282209, test accuracy: 0.6304347826086957
+Total error:  0.0518378043049
+epoch: 4, train accuracy: 0.6288343558282209, test accuracy: 0.6304347826086957
+Total error:  0.0512861302813
+epoch: 5, train accuracy: 0.6288343558282209, test accuracy: 0.6304347826086957
+test_ann2 execution time: 2.037296 secs
+training time: 2.0373148918151855 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  408
+Input and output dimensions:  11 5
+First sample (input, target):
+[19.  40.5  0.   1.   0.   0.   1.   0.   0.   0.   1. ] [1 0 0 0 0]
+Total error:  0.18142105607
+epoch: 1, train accuracy: 0.7230392156862745, test accuracy: 0.6684782608695652
+Total error:  0.0580420669593
+epoch: 2, train accuracy: 0.7107843137254902, test accuracy: 0.6467391304347826
+Total error:  0.0439314747887
+epoch: 3, train accuracy: 0.7230392156862745, test accuracy: 0.6739130434782609
+Total error:  0.0409500752389
+epoch: 4, train accuracy: 0.7450980392156863, test accuracy: 0.7010869565217391
+Total error:  0.0395959254042
+epoch: 5, train accuracy: 0.7450980392156863, test accuracy: 0.7010869565217391
+test_ann2 execution time: 2.549613 secs
+training time: 2.5496318340301514 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  490
+Input and output dimensions:  11 5
+First sample (input, target):
+[61.    33.535  0.     0.     1.     0.     1.     1.     0.     0.
+  0.   ] [0 1 0 0 0]
+Total error:  0.142864925862
+epoch: 1, train accuracy: 0.6551020408163265, test accuracy: 0.6304347826086957
+Total error:  0.0531823885473
+epoch: 2, train accuracy: 0.6551020408163265, test accuracy: 0.6304347826086957
+Total error:  0.0516871571599
+epoch: 3, train accuracy: 0.6551020408163265, test accuracy: 0.6304347826086957
+Total error:  0.0509560703388
+epoch: 4, train accuracy: 0.6551020408163265, test accuracy: 0.6304347826086957
+Total error:  0.050348372517
+epoch: 5, train accuracy: 0.6551020408163265, test accuracy: 0.6304347826086957
+test_ann2 execution time: 3.073154 secs
+training time: 3.073184013366699 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  571
+Input and output dimensions:  11 5
+First sample (input, target):
+[31.   29.81  0.    0.    1.    1.    0.    0.    0.    1.    0.  ] [0 1 0 0 0]
+Total error:  0.0835332646741
+epoch: 1, train accuracy: 0.6637478108581436, test accuracy: 0.6304347826086957
+Total error:  0.0497093969977
+epoch: 2, train accuracy: 0.6637478108581436, test accuracy: 0.6304347826086957
+Total error:  0.0477714360502
+epoch: 3, train accuracy: 0.6970227670753065, test accuracy: 0.6684782608695652
+Total error:  0.0456329669427
+epoch: 4, train accuracy: 0.7197898423817863, test accuracy: 0.6793478260869565
+Total error:  0.0428670310661
+epoch: 5, train accuracy: 0.7197898423817863, test accuracy: 0.7065217391304348
+test_ann2 execution time: 4.162486 secs
+training time: 4.162524938583374 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  653
+Input and output dimensions:  11 5
+First sample (input, target):
+[36.   27.55  3.    0.    1.    0.    1.    1.    0.    0.    0.  ] [1 0 0 0 0]
+Total error:  0.118885101046
+epoch: 1, train accuracy: 0.669218989280245, test accuracy: 0.6358695652173914
+Total error:  0.0470578381671
+epoch: 2, train accuracy: 0.6937212863705973, test accuracy: 0.6521739130434783
+Total error:  0.0432356988155
+epoch: 3, train accuracy: 0.7197549770290965, test accuracy: 0.6902173913043478
+Total error:  0.0410343046874
+epoch: 4, train accuracy: 0.7197549770290965, test accuracy: 0.6902173913043478
+Total error:  0.0400298246139
+epoch: 5, train accuracy: 0.7197549770290965, test accuracy: 0.6902173913043478
+test_ann2 execution time: 3.762704 secs
+training time: 3.7627367973327637 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  734
+Input and output dimensions:  11 5
+First sample (input, target):
+[19.  28.3  0.   1.   0.   1.   0.   0.   0.   0.   1. ] [0 1 0 0 0]
+Total error:  0.0634759810637
+epoch: 1, train accuracy: 0.7070844686648501, test accuracy: 0.6956521739130435
+Total error:  0.0437626021754
+epoch: 2, train accuracy: 0.7070844686648501, test accuracy: 0.6902173913043478
+Total error:  0.0413639699411
+epoch: 3, train accuracy: 0.720708446866485, test accuracy: 0.6956521739130435
+Total error:  0.0407510128083
+epoch: 4, train accuracy: 0.7316076294277929, test accuracy: 0.7010869565217391
+Total error:  0.0404029936748
+epoch: 5, train accuracy: 0.7316076294277929, test accuracy: 0.7010869565217391
+test_ann2 execution time: 4.183586 secs
+training time: 4.183620929718018 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  816
+Input and output dimensions:  11 5
+First sample (input, target):
+[30.  30.9  3.   1.   0.   0.   1.   0.   0.   0.   1. ] [1 0 0 0 0]
+Total error:  0.0636631334791
+epoch: 1, train accuracy: 0.6556372549019608, test accuracy: 0.6304347826086957
+Total error:  0.0486650209868
+epoch: 2, train accuracy: 0.6838235294117647, test accuracy: 0.6684782608695652
+Total error:  0.0460430600782
+epoch: 3, train accuracy: 0.7083333333333334, test accuracy: 0.6739130434782609
+Total error:  0.043645652446
+epoch: 4, train accuracy: 0.696078431372549, test accuracy: 0.6847826086956522
+Total error:  0.0424735391623
+epoch: 5, train accuracy: 0.7524509803921569, test accuracy: 0.717391304347826
+test_ann2 execution time: 4.612439 secs
+training time: 4.6124608516693115 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  82
+Input and output dimensions:  11 5
+First sample (input, target):
+[33.  32.9  2.   1.   0.   0.   1.   0.   0.   0.   1. ] [1 0 0 0 0]
+Total error:  0.306869814377
+epoch: 1, train accuracy: 0.47560975609756095, test accuracy: 0.45108695652173914
+Total error:  0.127570469506
+epoch: 2, train accuracy: 0.6219512195121951, test accuracy: 0.5815217391304348
+Total error:  0.0839211726154
+epoch: 3, train accuracy: 0.6219512195121951, test accuracy: 0.5815217391304348
+Total error:  0.0691093700766
+epoch: 4, train accuracy: 0.6463414634146342, test accuracy: 0.5978260869565217
+Total error:  0.0628305639459
+epoch: 5, train accuracy: 0.6951219512195121, test accuracy: 0.7010869565217391
+test_ann2 execution time: 0.827091 secs
+training time: 0.8271200656890869 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  163
+Input and output dimensions:  11 4
+First sample (input, target):
+[53.   31.35  0.    0.    1.    0.    1.    0.    0.    1.    0.  ] [0 0 1 0]
+Total error:  0.192588073457
+epoch: 1, train accuracy: 0.5705521472392638, test accuracy: 0.5380434782608695
+Total error:  0.0865651359768
+epoch: 2, train accuracy: 0.6932515337423313, test accuracy: 0.7010869565217391
+Total error:  0.0667801695739
+epoch: 3, train accuracy: 0.6932515337423313, test accuracy: 0.7010869565217391
+Total error:  0.0605300260782
+epoch: 4, train accuracy: 0.6932515337423313, test accuracy: 0.6684782608695652
+Total error:  0.0578817157374
+epoch: 5, train accuracy: 0.6932515337423313, test accuracy: 0.6684782608695652
+test_ann2 execution time: 1.284084 secs
+training time: 1.2841060161590576 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  245
+Input and output dimensions:  11 5
+First sample (input, target):
+[24.    29.925  0.     1.     0.     0.     1.     0.     1.     0.
+  0.   ] [1 0 0 0 0]
+Total error:  0.351840845742
+epoch: 1, train accuracy: 0.39183673469387753, test accuracy: 0.33695652173913043
+Total error:  0.0772533346446
+epoch: 2, train accuracy: 0.6571428571428571, test accuracy: 0.6304347826086957
+Total error:  0.0586537639053
+epoch: 3, train accuracy: 0.6571428571428571, test accuracy: 0.6304347826086957
+Total error:  0.0554270391302
+epoch: 4, train accuracy: 0.6571428571428571, test accuracy: 0.6304347826086957
+Total error:  0.0535905440187
+epoch: 5, train accuracy: 0.6612244897959184, test accuracy: 0.6304347826086957
+test_ann2 execution time: 1.725701 secs
+training time: 1.725722074508667 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  326
+Input and output dimensions:  11 5
+First sample (input, target):
+[36.  22.6  2.   1.   0.   1.   0.   0.   0.   0.   1. ] [0 1 0 0 0]
+Total error:  0.291030082787
+epoch: 1, train accuracy: 0.7116564417177914, test accuracy: 0.6956521739130435
+Total error:  0.0527857306679
+epoch: 2, train accuracy: 0.7116564417177914, test accuracy: 0.6956521739130435
+Total error:  0.0477109793232
+epoch: 3, train accuracy: 0.7116564417177914, test accuracy: 0.6956521739130435
+Total error:  0.0461946399073
+epoch: 4, train accuracy: 0.6932515337423313, test accuracy: 0.7119565217391305
+Total error:  0.0449154482375
+epoch: 5, train accuracy: 0.7239263803680982, test accuracy: 0.7119565217391305
+test_ann2 execution time: 2.286002 secs
+training time: 2.2860207557678223 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  408
+Input and output dimensions:  11 5
+First sample (input, target):
+[19.  20.7  0.   0.   1.   0.   1.   0.   0.   0.   1. ] [1 0 0 0 0]
+Total error:  0.099649323409
+epoch: 1, train accuracy: 0.6495098039215687, test accuracy: 0.6304347826086957
+Total error:  0.0549543391118
+epoch: 2, train accuracy: 0.6495098039215687, test accuracy: 0.6304347826086957
+Total error:  0.0522318196487
+epoch: 3, train accuracy: 0.6495098039215687, test accuracy: 0.6304347826086957
+Total error:  0.0507031722374
+epoch: 4, train accuracy: 0.6495098039215687, test accuracy: 0.6304347826086957
+Total error:  0.0491470415725
+epoch: 5, train accuracy: 0.6495098039215687, test accuracy: 0.6304347826086957
+test_ann2 execution time: 2.394884 secs
+training time: 2.394912004470825 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  490
+Input and output dimensions:  11 5
+First sample (input, target):
+[20.  29.6  0.   1.   0.   0.   1.   0.   0.   0.   1. ] [1 0 0 0 0]
+Total error:  0.136625348886
+epoch: 1, train accuracy: 0.6816326530612244, test accuracy: 0.6358695652173914
+Total error:  0.0485560559631
+epoch: 2, train accuracy: 0.673469387755102, test accuracy: 0.6358695652173914
+Total error:  0.0467706363183
+epoch: 3, train accuracy: 0.6938775510204082, test accuracy: 0.6521739130434783
+Total error:  0.0452833299663
+epoch: 4, train accuracy: 0.6938775510204082, test accuracy: 0.6521739130434783
+Total error:  0.0444573599437
+epoch: 5, train accuracy: 0.6959183673469388, test accuracy: 0.657608695652174
+test_ann2 execution time: 3.165117 secs
+training time: 3.16513991355896 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  571
+Input and output dimensions:  11 5
+First sample (input, target):
+[50.    27.075  1.     1.     0.     0.     1.     1.     0.     0.
+  0.   ] [1 0 0 0 0]
+Total error:  0.0858207785299
+epoch: 1, train accuracy: 0.6970227670753065, test accuracy: 0.6630434782608695
+Total error:  0.0444734865051
+epoch: 2, train accuracy: 0.7040280210157618, test accuracy: 0.6630434782608695
+Total error:  0.041628598693
+epoch: 3, train accuracy: 0.7197898423817863, test accuracy: 0.6902173913043478
+Total error:  0.0400025314762
+epoch: 4, train accuracy: 0.7408056042031523, test accuracy: 0.6956521739130435
+Total error:  0.039066980388
+epoch: 5, train accuracy: 0.7425569176882661, test accuracy: 0.6956521739130435
+test_ann2 execution time: 3.324061 secs
+training time: 3.324079990386963 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  653
+Input and output dimensions:  11 5
+First sample (input, target):
+[18.   32.12  2.    1.    0.    0.    1.    0.    0.    1.    0.  ] [1 0 0 0 0]
+Total error:  0.15945863242
+epoch: 1, train accuracy: 0.6477794793261868, test accuracy: 0.6304347826086957
+Total error:  0.0556717765513
+epoch: 2, train accuracy: 0.6477794793261868, test accuracy: 0.6304347826086957
+Total error:  0.0548455122346
+epoch: 3, train accuracy: 0.6477794793261868, test accuracy: 0.6304347826086957
+Total error:  0.05435582276
+epoch: 4, train accuracy: 0.6477794793261868, test accuracy: 0.6304347826086957
+Total error:  0.0543579876932
+epoch: 5, train accuracy: 0.6477794793261868, test accuracy: 0.6304347826086957
+test_ann2 execution time: 4.095380 secs
+training time: 4.095402002334595 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  734
+Input and output dimensions:  11 5
+First sample (input, target):
+[19.    25.555  1.     0.     1.     0.     1.     0.     1.     0.
+  0.   ] [1 0 0 0 0]
+Total error:  0.0668541386748
+epoch: 1, train accuracy: 0.662125340599455, test accuracy: 0.6304347826086957
+Total error:  0.052232957074
+epoch: 2, train accuracy: 0.662125340599455, test accuracy: 0.6304347826086957
+Total error:  0.0517191871786
+epoch: 3, train accuracy: 0.662125340599455, test accuracy: 0.6304347826086957
+Total error:  0.0516065192193
+epoch: 4, train accuracy: 0.662125340599455, test accuracy: 0.6304347826086957
+Total error:  0.051349131708
+epoch: 5, train accuracy: 0.662125340599455, test accuracy: 0.6304347826086957
+test_ann2 execution time: 4.866100 secs
+training time: 4.86612606048584 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  816
+Input and output dimensions:  11 5
+First sample (input, target):
+[44.    32.015  2.     0.     1.     0.     1.     0.     1.     0.
+  0.   ] [1 0 0 0 0]
+Total error:  0.146704792957
+epoch: 1, train accuracy: 0.7107843137254902, test accuracy: 0.6902173913043478
+Total error:  0.0465356045735
+epoch: 2, train accuracy: 0.6997549019607843, test accuracy: 0.6684782608695652
+Total error:  0.0443558965168
+epoch: 3, train accuracy: 0.6997549019607843, test accuracy: 0.6684782608695652
+Total error:  0.0431238718077
+epoch: 4, train accuracy: 0.7107843137254902, test accuracy: 0.6902173913043478
+Total error:  0.0417609908153
+epoch: 5, train accuracy: 0.7218137254901961, test accuracy: 0.6956521739130435
+test_ann2 execution time: 5.300730 secs
+training time: 5.300752878189087 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  82
+Input and output dimensions:  11 5
+First sample (input, target):
+[32.   46.53  2.    0.    1.    0.    1.    0.    0.    1.    0.  ] [1 0 0 0 0]
+Total error:  0.466491689455
+epoch: 1, train accuracy: 0.47560975609756095, test accuracy: 0.44021739130434784
+Total error:  0.18126933666
+epoch: 2, train accuracy: 0.6463414634146342, test accuracy: 0.6739130434782609
+Total error:  0.107407051938
+epoch: 3, train accuracy: 0.6463414634146342, test accuracy: 0.6630434782608695
+Total error:  0.0835709851797
+epoch: 4, train accuracy: 0.6463414634146342, test accuracy: 0.6630434782608695
+Total error:  0.0731851588071
+epoch: 5, train accuracy: 0.6463414634146342, test accuracy: 0.6630434782608695
+test_ann2 execution time: 1.022939 secs
+training time: 1.022960901260376 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  163
+Input and output dimensions:  11 5
+First sample (input, target):
+[41.   23.94  1.    0.    1.    0.    1.    1.    0.    0.    0.  ] [1 0 0 0 0]
+Total error:  0.167560060488
+epoch: 1, train accuracy: 0.656441717791411, test accuracy: 0.6304347826086957
+Total error:  0.055775007786
+epoch: 2, train accuracy: 0.656441717791411, test accuracy: 0.6304347826086957
+Total error:  0.0540854667675
+epoch: 3, train accuracy: 0.656441717791411, test accuracy: 0.6304347826086957
+Total error:  0.0532647252607
+epoch: 4, train accuracy: 0.656441717791411, test accuracy: 0.6304347826086957
+Total error:  0.0529849101257
+epoch: 5, train accuracy: 0.656441717791411, test accuracy: 0.6304347826086957
+test_ann2 execution time: 1.393472 secs
+training time: 1.3934900760650635 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  245
+Input and output dimensions:  11 5
+First sample (input, target):
+[58.   41.91  0.    1.    0.    0.    1.    0.    0.    1.    0.  ] [0 1 0 0 0]
+Total error:  0.140551224544
+epoch: 1, train accuracy: 0.6816326530612244, test accuracy: 0.6684782608695652
+Total error:  0.0489634350837
+epoch: 2, train accuracy: 0.6938775510204082, test accuracy: 0.6739130434782609
+Total error:  0.0476911914644
+epoch: 3, train accuracy: 0.7061224489795919, test accuracy: 0.6847826086956522
+Total error:  0.046774418144
+epoch: 4, train accuracy: 0.7061224489795919, test accuracy: 0.6847826086956522
+Total error:  0.0457082094093
+epoch: 5, train accuracy: 0.7061224489795919, test accuracy: 0.6847826086956522
+test_ann2 execution time: 1.817763 secs
+training time: 1.8177847862243652 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  326
+Input and output dimensions:  11 5
+First sample (input, target):
+[31.  25.9  3.   0.   1.   1.   0.   0.   0.   0.   1. ] [0 1 0 0 0]
+Total error:  0.274857149003
+epoch: 1, train accuracy: 0.7361963190184049, test accuracy: 0.7065217391304348
+Total error:  0.0614757276682
+epoch: 2, train accuracy: 0.7392638036809815, test accuracy: 0.6847826086956522
+Total error:  0.0498521139929
+epoch: 3, train accuracy: 0.7392638036809815, test accuracy: 0.6847826086956522
+Total error:  0.0458471650259
+epoch: 4, train accuracy: 0.7392638036809815, test accuracy: 0.6847826086956522
+Total error:  0.0438203439867
+epoch: 5, train accuracy: 0.7392638036809815, test accuracy: 0.6847826086956522
+test_ann2 execution time: 2.551897 secs
+training time: 2.551919937133789 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  408
+Input and output dimensions:  11 5
+First sample (input, target):
+[22.   31.02  3.    1.    0.    1.    0.    0.    0.    1.    0.  ] [0 0 1 0 0]
+Total error:  0.264263537269
+epoch: 1, train accuracy: 0.6666666666666666, test accuracy: 0.6304347826086957
+Total error:  0.0499134822018
+epoch: 2, train accuracy: 0.678921568627451, test accuracy: 0.6304347826086957
+Total error:  0.045790716604
+epoch: 3, train accuracy: 0.696078431372549, test accuracy: 0.6467391304347826
+Total error:  0.0440772054027
+epoch: 4, train accuracy: 0.6936274509803921, test accuracy: 0.6467391304347826
+Total error:  0.0421340580025
+epoch: 5, train accuracy: 0.696078431372549, test accuracy: 0.6467391304347826
+test_ann2 execution time: 2.877417 secs
+training time: 2.877441167831421 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  490
+Input and output dimensions:  11 5
+First sample (input, target):
+[35.    35.815  1.     1.     0.     0.     1.     0.     1.     0.
+  0.   ] [1 0 0 0 0]
+Total error:  0.101856653427
+epoch: 1, train accuracy: 0.6612244897959184, test accuracy: 0.6304347826086957
+Total error:  0.0539691046879
+epoch: 2, train accuracy: 0.6612244897959184, test accuracy: 0.6304347826086957
+Total error:  0.053282257264
+epoch: 3, train accuracy: 0.6612244897959184, test accuracy: 0.6304347826086957
+Total error:  0.0529749868277
+epoch: 4, train accuracy: 0.6612244897959184, test accuracy: 0.6304347826086957
+Total error:  0.0527517363132
+epoch: 5, train accuracy: 0.6612244897959184, test accuracy: 0.6304347826086957
+test_ann2 execution time: 2.875025 secs
+training time: 2.875044822692871 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  571
+Input and output dimensions:  11 5
+First sample (input, target):
+[35.   24.42  3.    0.    1.    1.    0.    0.    0.    1.    0.  ] [0 1 0 0 0]
+Total error:  0.0938269548547
+epoch: 1, train accuracy: 0.6795096322241682, test accuracy: 0.6739130434782609
+Total error:  0.0518750541965
+epoch: 2, train accuracy: 0.681260945709282, test accuracy: 0.6684782608695652
+Total error:  0.0491112515036
+epoch: 3, train accuracy: 0.6830122591943958, test accuracy: 0.6739130434782609
+Total error:  0.0467285475116
+epoch: 4, train accuracy: 0.6830122591943958, test accuracy: 0.6739130434782609
+Total error:  0.044670853949
+epoch: 5, train accuracy: 0.7005253940455342, test accuracy: 0.6902173913043478
+test_ann2 execution time: 3.247379 secs
+training time: 3.2473978996276855 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  653
+Input and output dimensions:  11 5
+First sample (input, target):
+[24.   23.21  0.    1.    0.    0.    1.    0.    0.    1.    0.  ] [0 0 1 0 0]
+Total error:  0.146150196191
+epoch: 1, train accuracy: 0.6814701378254211, test accuracy: 0.6413043478260869
+Total error:  0.0549185669466
+epoch: 2, train accuracy: 0.6768759571209801, test accuracy: 0.625
+Total error:  0.0493509904461
+epoch: 3, train accuracy: 0.6768759571209801, test accuracy: 0.6358695652173914
+Total error:  0.0496846947586
+epoch: 4, train accuracy: 0.6830015313935681, test accuracy: 0.6684782608695652
+Total error:  0.049041849021
+epoch: 5, train accuracy: 0.6830015313935681, test accuracy: 0.6684782608695652
+test_ann2 execution time: 4.218257 secs
+training time: 4.218280792236328 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  734
+Input and output dimensions:  11 5
+First sample (input, target):
+[44.    25.365  1.     0.     1.     0.     1.     0.     1.     0.
+  0.   ] [1 0 0 0 0]
+Total error:  0.146224248659
+epoch: 1, train accuracy: 0.6784741144414169, test accuracy: 0.6304347826086957
+Total error:  0.0499009465319
+epoch: 2, train accuracy: 0.6784741144414169, test accuracy: 0.6304347826086957
+Total error:  0.0485490624633
+epoch: 3, train accuracy: 0.6784741144414169, test accuracy: 0.6304347826086957
+Total error:  0.0479798551448
+epoch: 4, train accuracy: 0.6771117166212534, test accuracy: 0.6304347826086957
+Total error:  0.0473716936529
+epoch: 5, train accuracy: 0.6784741144414169, test accuracy: 0.6304347826086957
+test_ann2 execution time: 4.412387 secs
+training time: 4.412411212921143 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  816
+Input and output dimensions:  11 5
+First sample (input, target):
+[52.    32.205  3.     0.     1.     0.     1.     1.     0.     0.
+  0.   ] [1 0 0 0 0]
+Total error:  0.0829386820748
+epoch: 1, train accuracy: 0.6556372549019608, test accuracy: 0.6304347826086957
+Total error:  0.0530135913211
+epoch: 2, train accuracy: 0.6556372549019608, test accuracy: 0.6304347826086957
+Total error:  0.0522557712727
+epoch: 3, train accuracy: 0.6556372549019608, test accuracy: 0.6304347826086957
+Total error:  0.0518391306214
+epoch: 4, train accuracy: 0.6556372549019608, test accuracy: 0.6304347826086957
+Total error:  0.0516855244418
+epoch: 5, train accuracy: 0.6556372549019608, test accuracy: 0.6304347826086957
+test_ann2 execution time: 5.131405 secs
+training time: 5.131432294845581 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  82
+Input and output dimensions:  11 5
+First sample (input, target):
+[28.    26.315  3.     1.     0.     0.     1.     0.     1.     0.
+  0.   ] [1 0 0 0 0]
+Total error:  0.120951128805
+epoch: 1, train accuracy: 0.6951219512195121, test accuracy: 0.6304347826086957
+Total error:  0.0570039634344
+epoch: 2, train accuracy: 0.6951219512195121, test accuracy: 0.6304347826086957
+Total error:  0.0519771379895
+epoch: 3, train accuracy: 0.6951219512195121, test accuracy: 0.6304347826086957
+Total error:  0.0503365529419
+epoch: 4, train accuracy: 0.6951219512195121, test accuracy: 0.6304347826086957
+Total error:  0.0498080607341
+epoch: 5, train accuracy: 0.6951219512195121, test accuracy: 0.6304347826086957
+test_ann2 execution time: 0.772799 secs
+training time: 0.7728216648101807 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  163
+Input and output dimensions:  11 4
+First sample (input, target):
+[49.   22.61  1.    1.    0.    0.    1.    0.    1.    0.    0.  ] [1 0 0 0]
+Total error:  0.338337911184
+epoch: 1, train accuracy: 0.6257668711656442, test accuracy: 0.6304347826086957
+Total error:  0.087801255954
+epoch: 2, train accuracy: 0.656441717791411, test accuracy: 0.6630434782608695
+Total error:  0.0698441062016
+epoch: 3, train accuracy: 0.656441717791411, test accuracy: 0.6630434782608695
+Total error:  0.0632011965228
+epoch: 4, train accuracy: 0.656441717791411, test accuracy: 0.6630434782608695
+Total error:  0.0599485845941
+epoch: 5, train accuracy: 0.6809815950920245, test accuracy: 0.6521739130434783
+test_ann2 execution time: 1.174779 secs
+training time: 1.174799919128418 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  245
+Input and output dimensions:  11 5
+First sample (input, target):
+[33.   24.31  0.    1.    0.    0.    1.    0.    0.    1.    0.  ] [1 0 0 0 0]
+Total error:  0.203231615389
+epoch: 1, train accuracy: 0.7061224489795919, test accuracy: 0.7119565217391305
+Total error:  0.0532749612855
+epoch: 2, train accuracy: 0.6571428571428571, test accuracy: 0.6467391304347826
+Total error:  0.0478238283625
+epoch: 3, train accuracy: 0.6775510204081633, test accuracy: 0.6793478260869565
+Total error:  0.0463748263136
+epoch: 4, train accuracy: 0.6571428571428571, test accuracy: 0.6467391304347826
+Total error:  0.0450220993509
+epoch: 5, train accuracy: 0.6571428571428571, test accuracy: 0.6467391304347826
+test_ann2 execution time: 1.837379 secs
+training time: 1.8374099731445312 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  326
+Input and output dimensions:  11 5
+First sample (input, target):
+[46.   43.89  3.    0.    1.    0.    1.    0.    0.    1.    0.  ] [1 0 0 0 0]
+Total error:  0.173726809692
+epoch: 1, train accuracy: 0.6533742331288344, test accuracy: 0.6304347826086957
+Total error:  0.0552558838809
+epoch: 2, train accuracy: 0.6717791411042945, test accuracy: 0.6413043478260869
+Total error:  0.0502271574641
+epoch: 3, train accuracy: 0.6533742331288344, test accuracy: 0.6304347826086957
+Total error:  0.048112720272
+epoch: 4, train accuracy: 0.6533742331288344, test accuracy: 0.6304347826086957
+Total error:  0.0464441540585
+epoch: 5, train accuracy: 0.6717791411042945, test accuracy: 0.6413043478260869
+test_ann2 execution time: 2.218534 secs
+training time: 2.2185559272766113 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  408
+Input and output dimensions:  11 5
+First sample (input, target):
+[62.   38.83  0.    0.    1.    0.    1.    0.    0.    1.    0.  ] [0 1 0 0 0]
+Total error:  0.220632509926
+epoch: 1, train accuracy: 0.6593137254901961, test accuracy: 0.6304347826086957
+Total error:  0.0541816857469
+epoch: 2, train accuracy: 0.6593137254901961, test accuracy: 0.6304347826086957
+Total error:  0.0520615927191
+epoch: 3, train accuracy: 0.6593137254901961, test accuracy: 0.6304347826086957
+Total error:  0.0519119114779
+epoch: 4, train accuracy: 0.6593137254901961, test accuracy: 0.6304347826086957
+Total error:  0.0516785359615
+epoch: 5, train accuracy: 0.6593137254901961, test accuracy: 0.6304347826086957
+test_ann2 execution time: 3.362453 secs
+training time: 3.3624751567840576 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  490
+Input and output dimensions:  11 5
+First sample (input, target):
+[64.   33.88  0.    0.    1.    1.    0.    0.    0.    1.    0.  ] [0 0 0 1 0]
+Total error:  0.123175452404
+epoch: 1, train accuracy: 0.6653061224489796, test accuracy: 0.6304347826086957
+Total error:  0.0494210362977
+epoch: 2, train accuracy: 0.6693877551020408, test accuracy: 0.6304347826086957
+Total error:  0.0446033771284
+epoch: 3, train accuracy: 0.7163265306122449, test accuracy: 0.657608695652174
+Total error:  0.0412934522674
+epoch: 4, train accuracy: 0.736734693877551, test accuracy: 0.6684782608695652
+Total error:  0.0400489208101
+epoch: 5, train accuracy: 0.736734693877551, test accuracy: 0.6684782608695652
+test_ann2 execution time: 3.070155 secs
+training time: 3.0701749324798584 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  571
+Input and output dimensions:  11 5
+First sample (input, target):
+[51.   21.56  1.    1.    0.    0.    1.    0.    0.    1.    0.  ] [1 0 0 0 0]
+Total error:  0.171023424061
+epoch: 1, train accuracy: 0.6532399299474606, test accuracy: 0.6304347826086957
+Total error:  0.0529898120782
+epoch: 2, train accuracy: 0.6532399299474606, test accuracy: 0.6304347826086957
+Total error:  0.0517322466052
+epoch: 3, train accuracy: 0.6532399299474606, test accuracy: 0.6304347826086957
+Total error:  0.0510171064576
+epoch: 4, train accuracy: 0.6532399299474606, test accuracy: 0.6304347826086957
+Total error:  0.0497078962138
+epoch: 5, train accuracy: 0.6549912434325744, test accuracy: 0.6304347826086957
+test_ann2 execution time: 3.445272 secs
+training time: 3.4452919960021973 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  653
+Input and output dimensions:  11 5
+First sample (input, target):
+[29.  25.6  4.   1.   0.   0.   1.   0.   0.   0.   1. ] [1 0 0 0 0]
+Total error:  0.129227260729
+epoch: 1, train accuracy: 0.7212863705972435, test accuracy: 0.7065217391304348
+Total error:  0.0508953205355
+epoch: 2, train accuracy: 0.6814701378254211, test accuracy: 0.6684782608695652
+Total error:  0.0467435837097
+epoch: 3, train accuracy: 0.6814701378254211, test accuracy: 0.6684782608695652
+Total error:  0.0448731037274
+epoch: 4, train accuracy: 0.7090352220520674, test accuracy: 0.7065217391304348
+Total error:  0.0432672139187
+epoch: 5, train accuracy: 0.6814701378254211, test accuracy: 0.6684782608695652
+test_ann2 execution time: 3.770098 secs
+training time: 3.7701189517974854 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  734
+Input and output dimensions:  11 5
+First sample (input, target):
+[51.   37.73  1.    1.    0.    0.    1.    0.    0.    1.    0.  ] [1 0 0 0 0]
+Total error:  0.0936712343942
+epoch: 1, train accuracy: 0.662125340599455, test accuracy: 0.6304347826086957
+Total error:  0.0525374651381
+epoch: 2, train accuracy: 0.662125340599455, test accuracy: 0.6304347826086957
+Total error:  0.0512625880599
+epoch: 3, train accuracy: 0.662125340599455, test accuracy: 0.6304347826086957
+Total error:  0.0503675763246
+epoch: 4, train accuracy: 0.662125340599455, test accuracy: 0.6304347826086957
+Total error:  0.0496401717316
+epoch: 5, train accuracy: 0.662125340599455, test accuracy: 0.6304347826086957
+test_ann2 execution time: 4.139316 secs
+training time: 4.139337062835693 secs
+input: dim(254, 11)
+[[59.    28.785  0.    ...  1.     0.     0.   ]
+ [59.    26.505  0.    ...  0.     0.     0.   ]
+ [40.    34.105  1.    ...  0.     0.     0.   ]
+ ...
+ [42.    30.     0.    ...  0.     0.     1.   ]
+ [54.    21.01   2.    ...  0.     1.     0.   ]
+ [31.    23.6    2.    ...  0.     0.     1.   ]]
+
+target: dim(254, 1)
+[[0]
+ [1]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [2]
+ [3]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [2]
+ [1]
+ [1]
+ [2]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [2]
+ [0]
+ [1]
+ [1]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [3]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [2]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [1]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]
+ [2]
+ [0]
+ [2]
+ [1]
+ [1]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [1]
+ [3]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [2]
+ [1]
+ [0]
+ [3]
+ [2]
+ [0]
+ [0]
+ [1]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [3]
+ [0]
+ [1]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [0]
+ [1]
+ [1]
+ [3]
+ [1]
+ [0]
+ [3]
+ [3]
+ [1]
+ [0]
+ [0]
+ [1]
+ [0]
+ [0]]
+
+class: dim(0, 1)
+[]
+
+
+Number of training patterns:  816
+Input and output dimensions:  11 5
+First sample (input, target):
+[32.  31.5  1.   0.   1.   0.   1.   0.   0.   0.   1. ] [1 0 0 0 0]
+Total error:  0.107655715538
+epoch: 1, train accuracy: 0.6838235294117647, test accuracy: 0.6467391304347826
+Total error:  0.0482931901896
+epoch: 2, train accuracy: 0.7144607843137255, test accuracy: 0.6847826086956522
+Total error:  0.0465905261943
+epoch: 3, train accuracy: 0.6838235294117647, test accuracy: 0.6467391304347826
+Total error:  0.0453650176808
+epoch: 4, train accuracy: 0.7144607843137255, test accuracy: 0.6847826086956522
+Total error:  0.0443879454157
+epoch: 5, train accuracy: 0.7144607843137255, test accuracy: 0.6847826086956522
+test_ann2 execution time: 4.743132 secs
+training time: 4.743152856826782 secs
+ann_learning_curve execution time: 144.675735 secs
+

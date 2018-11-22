@@ -1,0 +1,677 @@
+Last login: Sun Sep 23 03:17:52 on ttys000
+Jamess-MacBook-Pro:~ Jphild$ cd /Users/Jphild/Documents/Courses/Georgia\ Tech/Machine\ Learning/Assignment\ 1 
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 DecisionTree.py
+922     1.0
+1026    0.0
+275     0.0
+1102    0.0
+350     0.0
+433     1.0
+1083    1.0
+682     1.0
+637     0.0
+819     0.0
+994     0.0
+602     1.0
+1032    0.0
+843     0.0
+198     0.0
+993     0.0
+377     0.0
+789     0.0
+765     0.0
+833     0.0
+733     0.0
+681     1.0
+1008    0.0
+332     0.0
+1201    0.0
+496     1.0
+64      0.0
+3       0.0
+865     1.0
+517     0.0
+       ... 
+882     0.0
+171     1.0
+871     0.0
+115     0.0
+566     0.0
+911     0.0
+365     0.0
+461     1.0
+126     1.0
+860     1.0
+593     0.0
+57      0.0
+86      0.0
+220     1.0
+23      0.0
+468     0.0
+1006    0.0
+281     0.0
+587     0.0
+1318    0.0
+752     0.0
+403     0.0
+611     1.0
+1284    1.0
+618     0.0
+375     0.0
+711     0.0
+1212    0.0
+341     0.0
+901     0.0
+Name: region_southwest, Length: 400, dtype: float64
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 DecisionTree.py
+Traceback (most recent call last):
+  File "DecisionTree.py", line 45, in <module>
+    main()
+  File "DecisionTree.py", line 37, in main
+    tx, ty, vx, vy = load_data_medicalcost("./dataset/medicalcost/processed_medicalcost.csv")
+  File "/Users/Jphild/Documents/Courses/Georgia Tech/Machine Learning/Assignment 1/utilities.py", line 160, in load_data_medicalcost
+    df.drop(['charges'], 1, inplece=True)
+TypeError: drop() got an unexpected keyword argument 'inplece'
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 DecisionTree.py
+967     NaN
+179     NaN
+1283    NaN
+226     NaN
+500     NaN
+629     NaN
+501     NaN
+852     NaN
+975     NaN
+306     NaN
+1129    NaN
+1225    NaN
+506     NaN
+1317    NaN
+308     NaN
+1052    NaN
+547     NaN
+266     NaN
+189     NaN
+1232    NaN
+787     NaN
+219     NaN
+1322    NaN
+549     NaN
+803     NaN
+791     NaN
+310     NaN
+460     NaN
+1175    NaN
+138     NaN
+       ... 
+468     NaN
+1174    NaN
+569     NaN
+982     NaN
+614     NaN
+864     NaN
+901     NaN
+1275    NaN
+1117    NaN
+567     NaN
+523     NaN
+313     NaN
+355     NaN
+467     NaN
+903     NaN
+607     NaN
+748     NaN
+771     NaN
+1235    NaN
+1331    NaN
+1000    NaN
+161     NaN
+511     NaN
+570     NaN
+1086    NaN
+609     NaN
+1076    NaN
+1253    NaN
+378     NaN
+249     NaN
+Name: charges_classified, Length: 411, dtype: category
+Categories (4, interval[int64]): [(0, 1] < (1, 2] < (2, 3] < (3, 4]]
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 DecisionTree.py
+587     0.0
+0       1.0
+1002    1.0
+426     0.0
+170     0.0
+1026    0.0
+281     0.0
+1032    0.0
+1270    0.0
+176     0.0
+8       0.0
+768     1.0
+1256    0.0
+827     0.0
+485     0.0
+1252    1.0
+1067    0.0
+1028    1.0
+974     0.0
+1246    1.0
+579     0.0
+585     0.0
+1326    0.0
+903     0.0
+942     0.0
+528     0.0
+58      0.0
+1267    0.0
+816     0.0
+1050    0.0
+       ... 
+396     1.0
+1291    1.0
+84      1.0
+169     0.0
+1260    0.0
+1191    0.0
+715     1.0
+385     1.0
+833     0.0
+514     1.0
+624     0.0
+335     1.0
+354     0.0
+154     0.0
+383     0.0
+536     1.0
+724     0.0
+878     1.0
+1190    0.0
+188     1.0
+1277    0.0
+928     0.0
+843     0.0
+369     0.0
+577     0.0
+27      0.0
+1257    0.0
+276     0.0
+32      1.0
+102     0.0
+Name: region_southwest, Length: 409, dtype: float64
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 DecisionTree.py
+16      1
+808     1
+706     4
+1171    2
+571     1
+913     1
+825     2
+974     1
+1327    1
+636     1
+769     1
+773     2
+1032    1
+792     1
+298     4
+901     5
+355     3
+845     4
+84      4
+67      1
+971     1
+363     1
+639     2
+1317    1
+1285    1
+410     1
+1231    2
+939     1
+406     1
+744     1
+       ..
+1198    1
+120     1
+881     1
+658     3
+175     5
+419     3
+400     1
+811     1
+654     2
+1045    2
+295     1
+177     1
+134     1
+166     1
+687     1
+598     1
+208     2
+925     3
+1050    1
+193     2
+76      1
+522     1
+326     1
+328     5
+1062    5
+335     2
+201     1
+757     2
+48      2
+688     3
+Name: charges_classified, Length: 404, dtype: category
+Categories (5, int64): [1 < 2 < 3 < 4 < 5]
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 DecisionTree.py
+training time: 0.0052928924560546875 secs
+training time: 0.0005841255187988281 secs
+training time: 0.0008640289306640625 secs
+training time: 0.0007460117340087891 secs
+training time: 0.0012290477752685547 secs
+training time: 0.0007979869842529297 secs
+training time: 0.0008459091186523438 secs
+training time: 0.0009500980377197266 secs
+training time: 0.0012059211730957031 secs
+training time: 0.0018427371978759766 secs
+training time: 0.0006721019744873047 secs
+training time: 0.0008971691131591797 secs
+training time: 0.00074005126953125 secs
+training time: 0.0007231235504150391 secs
+training time: 0.0007507801055908203 secs
+training time: 0.0009579658508300781 secs
+training time: 0.0009548664093017578 secs
+training time: 0.0012221336364746094 secs
+training time: 0.001149892807006836 secs
+training time: 0.0011012554168701172 secs
+training time: 0.0005152225494384766 secs
+training time: 0.0005409717559814453 secs
+training time: 0.0006380081176757812 secs
+training time: 0.0010008811950683594 secs
+training time: 0.0007967948913574219 secs
+training time: 0.0010938644409179688 secs
+training time: 0.0008790493011474609 secs
+training time: 0.0013298988342285156 secs
+training time: 0.001110076904296875 secs
+training time: 0.0018470287322998047 secs
+training time: 0.000804901123046875 secs
+training time: 0.0009198188781738281 secs
+training time: 0.0006129741668701172 secs
+training time: 0.0008270740509033203 secs
+training time: 0.0007991790771484375 secs
+training time: 0.0008180141448974609 secs
+training time: 0.0013570785522460938 secs
+training time: 0.0015370845794677734 secs
+training time: 0.00102996826171875 secs
+training time: 0.0010368824005126953 secs
+training time: 0.0004937648773193359 secs
+training time: 0.0006661415100097656 secs
+training time: 0.0007910728454589844 secs
+training time: 0.0007390975952148438 secs
+training time: 0.0010497570037841797 secs
+training time: 0.0010268688201904297 secs
+training time: 0.0010428428649902344 secs
+training time: 0.00084686279296875 secs
+training time: 0.0009417533874511719 secs
+training time: 0.0013270378112792969 secs
+get_learning_curve execution time: 0.229941 secs
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 AdaBoost.py
+training time: 0.0024988651275634766 secs
+training time: 0.007782936096191406 secs
+training time: 0.03102397918701172 secs
+training time: 0.03393101692199707 secs
+training time: 0.03446483612060547 secs
+training time: 0.036959171295166016 secs
+training time: 0.036390066146850586 secs
+training time: 0.039565086364746094 secs
+training time: 0.04195213317871094 secs
+training time: 0.04361987113952637 secs
+training time: 0.0015921592712402344 secs
+training time: 0.003949165344238281 secs
+training time: 0.029447078704833984 secs
+training time: 0.036637067794799805 secs
+training time: 0.0334017276763916 secs
+training time: 0.04243040084838867 secs
+training time: 0.03689694404602051 secs
+training time: 0.042388916015625 secs
+training time: 0.04211616516113281 secs
+training time: 0.04276299476623535 secs
+training time: 0.0015060901641845703 secs
+training time: 0.004694938659667969 secs
+training time: 0.033807992935180664 secs
+training time: 0.032427072525024414 secs
+training time: 0.036538124084472656 secs
+training time: 0.03668689727783203 secs
+training time: 0.03571891784667969 secs
+training time: 0.03894305229187012 secs
+training time: 0.03941798210144043 secs
+training time: 0.03844404220581055 secs
+training time: 0.0018968582153320312 secs
+training time: 0.0018568038940429688 secs
+training time: 0.00972294807434082 secs
+training time: 0.0315399169921875 secs
+training time: 0.03206920623779297 secs
+training time: 0.037117958068847656 secs
+training time: 0.038342952728271484 secs
+training time: 0.03858780860900879 secs
+training time: 0.03926396369934082 secs
+training time: 0.04114699363708496 secs
+training time: 0.004434108734130859 secs
+training time: 0.0017108917236328125 secs
+training time: 0.006279945373535156 secs
+training time: 0.016588687896728516 secs
+training time: 0.034165143966674805 secs
+training time: 0.03594398498535156 secs
+training time: 0.041734933853149414 secs
+training time: 0.03650307655334473 secs
+training time: 0.042485952377319336 secs
+training time: 0.03989672660827637 secs
+get_learning_curve execution time: 1.744730 secs
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 SVM.py
+training time: 0.24544310569763184 secs
+training time: 0.5103843212127686 secs
+training time: 0.8845031261444092 secs
+training time: 1.480262041091919 secs
+training time: 2.073477029800415 secs
+training time: 2.9328770637512207 secs
+training time: 3.4784042835235596 secs
+training time: 4.900217056274414 secs
+training time: 5.807537794113159 secs
+training time: 6.253804922103882 secs
+training time: 0.21745610237121582 secs
+training time: 0.5470328330993652 secs
+training time: 0.9081790447235107 secs
+training time: 1.5952949523925781 secs
+training time: 2.318556070327759 secs
+training time: 2.667172908782959 secs
+training time: 3.357116937637329 secs
+training time: 3.9057769775390625 secs
+training time: 4.905596017837524 secs
+training time: 8.618667840957642 secs
+training time: 0.23931288719177246 secs
+training time: 0.5450470447540283 secs
+training time: 0.9719963073730469 secs
+training time: 1.548203945159912 secs
+training time: 2.634798049926758 secs
+training time: 2.7864990234375 secs
+training time: 3.7720768451690674 secs
+training time: 4.2062788009643555 secs
+training time: 5.052290201187134 secs
+training time: 7.108138084411621 secs
+training time: 0.22498703002929688 secs
+training time: 0.4984769821166992 secs
+training time: 0.8882691860198975 secs
+training time: 1.4437799453735352 secs
+training time: 2.054593086242676 secs
+training time: 2.6431219577789307 secs
+training time: 3.324615955352783 secs
+training time: 3.9307708740234375 secs
+training time: 6.274604082107544 secs
+training time: 7.424005031585693 secs
+training time: 0.23622822761535645 secs
+training time: 0.5559051036834717 secs
+training time: 1.0044000148773193 secs
+training time: 1.5450282096862793 secs
+training time: 2.0498831272125244 secs
+training time: 2.5974111557006836 secs
+training time: 3.55480694770813 secs
+training time: 3.9026901721954346 secs
+training time: 4.778830051422119 secs
+training time: 5.403072118759155 secs
+training time: 0.2264859676361084 secs
+training time: 0.5031840801239014 secs
+training time: 0.9636201858520508 secs
+training time: 1.4546501636505127 secs
+training time: 2.2783710956573486 secs
+training time: 3.056344747543335 secs
+training time: 3.9794650077819824 secs
+training time: 4.563356161117554 secs
+training time: 4.69215989112854 secs
+training time: 5.838099956512451 secs
+training time: 0.22614502906799316 secs
+training time: 0.48801612854003906 secs
+training time: 0.995980978012085 secs
+training time: 1.6785032749176025 secs
+training time: 2.823458194732666 secs
+training time: 3.6655030250549316 secs
+training time: 5.227971076965332 secs
+training time: 4.610892057418823 secs
+training time: 5.5555150508880615 secs
+training time: 5.941770792007446 secs
+training time: 0.23035383224487305 secs
+training time: 0.5214118957519531 secs
+training time: 1.3577961921691895 secs
+training time: 2.42934513092041 secs
+training time: 2.442106246948242 secs
+training time: 3.749617099761963 secs
+training time: 3.9384121894836426 secs
+training time: 4.193696022033691 secs
+training time: 5.16117525100708 secs
+training time: 5.698761224746704 secs
+training time: 0.28540587425231934 secs
+training time: 0.5727601051330566 secs
+training time: 1.1614997386932373 secs
+training time: 1.5605113506317139 secs
+training time: 2.3006529808044434 secs
+training time: 3.2061400413513184 secs
+training time: 4.381165027618408 secs
+training time: 5.051209926605225 secs
+training time: 5.223690986633301 secs
+training time: 5.454054117202759 secs
+training time: 0.2227001190185547 secs
+training time: 0.5225780010223389 secs
+training time: 0.896625280380249 secs
+training time: 1.4918739795684814 secs
+training time: 2.030224323272705 secs
+training time: 2.653782844543457 secs
+training time: 3.3484959602355957 secs
+training time: 4.49137020111084 secs
+training time: 6.060094118118286 secs
+training time: 6.389925003051758 secs
+get_learning_curve execution time: 294.433289 secs
+training time: 0.6185309886932373 secs
+training time: 2.631011962890625 secs
+training time: 5.486329078674316 secs
+training time: 11.100981950759888 secs
+training time: 17.460625886917114 secs
+training time: 25.526626110076904 secs
+training time: 36.53614616394043 secs
+training time: 40.16498517990112 secs
+training time: 57.46802592277527 secs
+training time: 73.07510304450989 secs
+training time: 0.5820510387420654 secs
+training time: 2.380251884460449 secs
+training time: 5.340507984161377 secs
+training time: 10.897079944610596 secs
+training time: 17.407665014266968 secs
+training time: 21.94992709159851 secs
+training time: 36.37419104576111 secs
+training time: 42.43611693382263 secs
+training time: 57.742079973220825 secs
+training time: 75.99392890930176 secs
+training time: 0.592170238494873 secs
+training time: 2.413964033126831 secs
+training time: 5.5906500816345215 secs
+training time: 10.600608110427856 secs
+training time: 18.005993843078613 secs
+training time: 23.808127880096436 secs
+training time: 32.58893179893494 secs
+training time: 45.529767990112305 secs
+training time: 54.50542187690735 secs
+training time: 68.48148083686829 secs
+training time: 0.6395890712738037 secs
+training time: 2.3010969161987305 secs
+training time: 5.921703100204468 secs
+training time: 10.144068956375122 secs
+training time: 16.89933729171753 secs
+training time: 26.494810104370117 secs
+training time: 32.70793867111206 secs
+training time: 39.83720088005066 secs
+training time: 60.46975374221802 secs
+training time: 77.20992398262024 secs
+training time: 0.6628627777099609 secs
+training time: 2.4343340396881104 secs
+training time: 5.898977041244507 secs
+training time: 10.023147106170654 secs
+training time: 15.215190887451172 secs
+training time: 25.564361810684204 secs
+training time: 36.08962297439575 secs
+training time: 42.2677640914917 secs
+training time: 61.9027841091156 secs
+training time: 73.14264178276062 secs
+get_learning_curve execution time: 2718.487468 secs
+training time: 0.23078203201293945 secs
+training time: 0.48680615425109863 secs
+training time: 1.0262629985809326 secs
+training time: 1.5822241306304932 secs
+training time: 1.9902751445770264 secs
+training time: 2.421501874923706 secs
+training time: 2.9784791469573975 secs
+training time: 4.280850172042847 secs
+training time: 5.232007026672363 secs
+training time: 5.274654865264893 secs
+training time: 0.2151951789855957 secs
+training time: 0.4800591468811035 secs
+training time: 0.8260862827301025 secs
+training time: 1.4242119789123535 secs
+training time: 2.2109620571136475 secs
+training time: 3.0210540294647217 secs
+training time: 3.3263869285583496 secs
+training time: 3.6612229347229004 secs
+training time: 4.30049204826355 secs
+training time: 5.193721771240234 secs
+training time: 0.22364592552185059 secs
+training time: 0.47248196601867676 secs
+training time: 0.8623571395874023 secs
+training time: 1.3854329586029053 secs
+training time: 1.9037399291992188 secs
+training time: 2.472209930419922 secs
+training time: 3.1289689540863037 secs
+training time: 3.7441887855529785 secs
+training time: 4.92588996887207 secs
+training time: 5.825998067855835 secs
+training time: 0.2164468765258789 secs
+training time: 0.5484950542449951 secs
+training time: 0.9637939929962158 secs
+training time: 1.4485728740692139 secs
+training time: 2.338887929916382 secs
+training time: 2.4770543575286865 secs
+training time: 3.1566731929779053 secs
+training time: 4.589488983154297 secs
+training time: 4.96425986289978 secs
+training time: 5.549942970275879 secs
+training time: 0.2381587028503418 secs
+training time: 0.6394050121307373 secs
+training time: 0.9911248683929443 secs
+training time: 1.8033289909362793 secs
+training time: 2.4035091400146484 secs
+training time: 3.3338780403137207 secs
+training time: 3.678497076034546 secs
+training time: 4.693165063858032 secs
+training time: 5.357825040817261 secs
+training time: 5.5779619216918945 secs
+training time: 0.21962785720825195 secs
+training time: 0.5156810283660889 secs
+training time: 0.8614559173583984 secs
+training time: 1.3876140117645264 secs
+training time: 1.9558260440826416 secs
+training time: 2.480120897293091 secs
+training time: 3.1319942474365234 secs
+training time: 3.6227262020111084 secs
+training time: 4.609979152679443 secs
+training time: 5.664644956588745 secs
+training time: 0.2814981937408447 secs
+training time: 0.5783610343933105 secs
+training time: 1.0687413215637207 secs
+training time: 1.5775690078735352 secs
+training time: 2.0774221420288086 secs
+training time: 2.6907787322998047 secs
+training time: 3.427820920944214 secs
+training time: 4.019427061080933 secs
+training time: 4.890207052230835 secs
+training time: 5.517077207565308 secs
+training time: 0.22226500511169434 secs
+training time: 0.5149991512298584 secs
+training time: 0.9512739181518555 secs
+training time: 1.5342910289764404 secs
+training time: 2.0784809589385986 secs
+training time: 2.7362711429595947 secs
+training time: 3.4367856979370117 secs
+training time: 4.17972207069397 secs
+training time: 4.878316164016724 secs
+training time: 5.439079999923706 secs
+training time: 0.21039509773254395 secs
+training time: 0.5333130359649658 secs
+training time: 0.9771418571472168 secs
+training time: 1.5028681755065918 secs
+training time: 2.1032183170318604 secs
+training time: 2.6829288005828857 secs
+training time: 3.349574089050293 secs
+training time: 4.045622825622559 secs
+training time: 4.7332258224487305 secs
+training time: 5.367467880249023 secs
+training time: 0.21613097190856934 secs
+training time: 0.5362439155578613 secs
+training time: 0.8555991649627686 secs
+training time: 1.4719910621643066 secs
+training time: 1.9999449253082275 secs
+training time: 2.6065142154693604 secs
+training time: 3.272502899169922 secs
+training time: 4.036871910095215 secs
+training time: 4.587076902389526 secs
+training time: 5.353531122207642 secs
+get_learning_curve execution time: 263.879702 secs
+training time: 0.6061708927154541 secs
+training time: 2.403104066848755 secs
+training time: 5.489062786102295 secs
+training time: 10.263482809066772 secs
+training time: 16.294469118118286 secs
+training time: 21.83560299873352 secs
+training time: 29.555267095565796 secs
+training time: 41.69349503517151 secs
+training time: 58.49793314933777 secs
+training time: 68.31248307228088 secs
+training time: 0.5936219692230225 secs
+training time: 2.3784170150756836 secs
+training time: 6.329155921936035 secs
+training time: 10.204923868179321 secs
+training time: 19.502771854400635 secs
+training time: 23.370070219039917 secs
+training time: 35.70055913925171 secs
+training time: 45.57267475128174 secs
+training time: 57.56423497200012 secs
+training time: 68.72951698303223 secs
+training time: 0.6252388954162598 secs
+training time: 2.4498698711395264 secs
+training time: 6.011650085449219 secs
+training time: 11.96284794807434 secs
+training time: 16.23849391937256 secs
+training time: 30.125514030456543 secs
+training time: 31.814774990081787 secs
+training time: 38.8037850856781 secs
+training time: 57.214892864227295 secs
+training time: 73.09543585777283 secs
+training time: 0.6575758457183838 secs
+training time: 2.3205068111419678 secs
+training time: 5.589421987533569 secs
+training time: 9.49334192276001 secs
+training time: 17.199352979660034 secs
+training time: 25.03994584083557 secs
+training time: 34.129860162734985 secs
+training time: 44.444758892059326 secs
+training time: 50.36534667015076 secs
+training time: 70.14922595024109 secs
+training time: 0.6307199001312256 secs
+training time: 2.424617052078247 secs
+training time: 5.4073498249053955 secs
+training time: 10.840819835662842 secs
+training time: 17.06621217727661 secs
+training time: 22.661524772644043 secs
+training time: 34.93539881706238 secs
+training time: 39.316789865493774 secs
+training time: 76.85379576683044 secs
+training time: 108.28089809417725 secs
+get_learning_curve execution time: 2770.444583 secs
+Segmentation fault: 11
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 SVM.py
+Jamess-MacBook-Pro:Assignment 1 Jphild$ 

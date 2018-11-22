@@ -1,0 +1,2187 @@
+Last login: Sat Sep 22 22:26:57 on ttys000
+Jamess-MacBook-Pro:~ Jphild$ cd /Users/Jphild/Documents/Courses/Georgia\ Tech/Machine\ Learning/Assignment\ 1 
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 MedicalCostDataProcessing.py
+Traceback (most recent call last):
+  File "MedicalCostDataProcessing.py", line 67, in <module>
+    main()
+  File "MedicalCostDataProcessing.py", line 64, in main
+    load_clinvar_data(file_path)
+NameError: name 'load_clinvar_data' is not defined
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 MedicalCostDataProcessing.py
+Traceback (most recent call last):
+  File "MedicalCostDataProcessing.py", line 67, in <module>
+    main()
+  File "MedicalCostDataProcessing.py", line 64, in main
+    load_medicalcost_data(file_path)
+  File "MedicalCostDataProcessing.py", line 23, in load_medicalcost_data
+    df = pre_processing_medicalcost(df)
+  File "MedicalCostDataProcessing.py", line 26, in pre_processing_medicalcost
+    df = catogorize("sex", df)
+TypeError: catogorize() takes 1 positional argument but 2 were given
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 MedicalCostDataProcessing.py
+/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/core/frame.py:3790: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  downcast=downcast, **kwargs)
+{'female', 'male'}
+sex extracted! len = 2
+Traceback (most recent call last):
+  File "MedicalCostDataProcessing.py", line 67, in <module>
+    main()
+  File "MedicalCostDataProcessing.py", line 64, in main
+    load_medicalcost_data(file_path)
+  File "MedicalCostDataProcessing.py", line 23, in load_medicalcost_data
+    df = pre_processing_medicalcost(df)
+  File "MedicalCostDataProcessing.py", line 26, in pre_processing_medicalcost
+    df = catogorize("sex", df)
+  File "MedicalCostDataProcessing.py", line 49, in catogorize
+    if separator == None:
+NameError: name 'separator' is not defined
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 MedicalCostDataProcessing.py
+/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/core/frame.py:3790: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html#indexing-view-versus-copy
+  downcast=downcast, **kwargs)
+{'female', 'male'}
+sex extracted! len = 2
+1 added.
+2 added.
+sex catogorized!
+{'yes', 'no'}
+smoker extracted! len = 2
+1 added.
+2 added.
+smoker catogorized!
+{'northeast', 'northwest', 'southeast', 'southwest'}
+region extracted! len = 4
+1 added.
+2 added.
+3 added.
+4 added.
+region catogorized!
+   age     bmi        ...         region_southeast  region_southwest
+0   19  27.900        ...                      0.0               1.0
+1   18  33.770        ...                      1.0               0.0
+2   28  33.000        ...                      1.0               0.0
+3   33  22.705        ...                      0.0               0.0
+4   32  28.880        ...                      0.0               0.0
+
+[5 rows x 12 columns]
+Writing to processed_medicalcost.csv...
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 DecisionTree.py
+Traceback (most recent call last):
+  File "DecisionTree.py", line 41, in <module>
+    main()
+  File "DecisionTree.py", line 36, in main
+    run_decision_tree()
+  File "DecisionTree.py", line 17, in run_decision_tree
+    tx, ty, vx, vy = load_data("./dataset/clinvar/processed_2.csv")
+  File "/Users/Jphild/Documents/Courses/Georgia Tech/Machine Learning/Assignment 1/utilities.py", line 133, in load_data
+    df = pd.read_csv(file_path)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/io/parsers.py", line 678, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/io/parsers.py", line 440, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/io/parsers.py", line 787, in __init__
+    self._make_engine(self.engine)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/io/parsers.py", line 1014, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/io/parsers.py", line 1708, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 384, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 695, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: File b'./dataset/clinvar/processed_2.csv' does not exist
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 DecisionTree.py
+Traceback (most recent call last):
+  File "DecisionTree.py", line 43, in <module>
+    main()
+  File "DecisionTree.py", line 38, in main
+    run_decision_tree()
+  File "DecisionTree.py", line 28, in run_decision_tree
+    tx, ty, vx, vy = load_data_medicalcost("./dataset/medicalmost/processed_medicalcost.csv")
+  File "/Users/Jphild/Documents/Courses/Georgia Tech/Machine Learning/Assignment 1/utilities.py", line 153, in load_data_medicalcost
+    df = pd.read_csv(file_path)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/io/parsers.py", line 678, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/io/parsers.py", line 440, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/io/parsers.py", line 787, in __init__
+    self._make_engine(self.engine)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/io/parsers.py", line 1014, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/io/parsers.py", line 1708, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 384, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 695, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: File b'./dataset/medicalmost/processed_medicalcost.csv' does not exist
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 DecisionTree.py
+training time: 0.0017969608306884766 secs
+training time: 0.0011000633239746094 secs
+training time: 0.0010821819305419922 secs
+training time: 0.0012400150299072266 secs
+training time: 0.00116729736328125 secs
+training time: 0.0014681816101074219 secs
+training time: 0.0015730857849121094 secs
+training time: 0.0015223026275634766 secs
+training time: 0.00154876708984375 secs
+training time: 0.0017228126525878906 secs
+training time: 0.0007350444793701172 secs
+training time: 0.0008590221405029297 secs
+training time: 0.0011227130889892578 secs
+training time: 0.0007548332214355469 secs
+training time: 0.0008139610290527344 secs
+training time: 0.0017397403717041016 secs
+training time: 0.0014069080352783203 secs
+training time: 0.001756906509399414 secs
+training time: 0.0015959739685058594 secs
+training time: 0.0019240379333496094 secs
+training time: 0.0007719993591308594 secs
+training time: 0.0010786056518554688 secs
+training time: 0.002001047134399414 secs
+training time: 0.0007839202880859375 secs
+training time: 0.0011277198791503906 secs
+training time: 0.00131988525390625 secs
+training time: 0.0013270378112792969 secs
+training time: 0.0013837814331054688 secs
+training time: 0.0016503334045410156 secs
+training time: 0.0016660690307617188 secs
+training time: 0.0010256767272949219 secs
+training time: 0.0009350776672363281 secs
+training time: 0.0011470317840576172 secs
+training time: 0.0012557506561279297 secs
+training time: 0.0020427703857421875 secs
+training time: 0.0014548301696777344 secs
+training time: 0.0009291172027587891 secs
+training time: 0.0014369487762451172 secs
+training time: 0.0016448497772216797 secs
+training time: 0.0024483203887939453 secs
+training time: 0.0008709430694580078 secs
+training time: 0.001087188720703125 secs
+training time: 0.0017719268798828125 secs
+training time: 0.00115203857421875 secs
+training time: 0.0011801719665527344 secs
+training time: 0.0012819766998291016 secs
+training time: 0.0014629364013671875 secs
+training time: 0.0014829635620117188 secs
+training time: 0.0016710758209228516 secs
+training time: 0.0012557506561279297 secs
+get_learning_curve execution time: 0.323381 secs
+Traceback (most recent call last):
+  File "DecisionTree.py", line 43, in <module>
+    main()
+  File "DecisionTree.py", line 39, in main
+    plot_learning_curves("./results/clinvar/dt_results.pickle", "Clinvar Data - Decision Tree")
+  File "/Users/Jphild/Documents/Courses/Georgia Tech/Machine Learning/Assignment 1/utilities.py", line 118, in plot_learning_curves
+    with open(result, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: './results/clinvar/dt_results.pickle'
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 DecisionTree.py
+training time: 0.0010008811950683594 secs
+training time: 0.0008890628814697266 secs
+training time: 0.0009670257568359375 secs
+training time: 0.0011899471282958984 secs
+training time: 0.001291036605834961 secs
+training time: 0.001172780990600586 secs
+training time: 0.0014209747314453125 secs
+training time: 0.0019421577453613281 secs
+training time: 0.0016341209411621094 secs
+training time: 0.0017459392547607422 secs
+training time: 0.0008580684661865234 secs
+training time: 0.0008730888366699219 secs
+training time: 0.0010309219360351562 secs
+training time: 0.0015749931335449219 secs
+training time: 0.001329183578491211 secs
+training time: 0.001294851303100586 secs
+training time: 0.0010509490966796875 secs
+training time: 0.002095937728881836 secs
+training time: 0.0016658306121826172 secs
+training time: 0.0019910335540771484 secs
+training time: 0.0005621910095214844 secs
+training time: 0.0007276535034179688 secs
+training time: 0.001953125 secs
+training time: 0.0010590553283691406 secs
+training time: 0.0013828277587890625 secs
+training time: 0.0013036727905273438 secs
+training time: 0.0016088485717773438 secs
+training time: 0.0022950172424316406 secs
+training time: 0.0015332698822021484 secs
+training time: 0.002148151397705078 secs
+training time: 0.0008258819580078125 secs
+training time: 0.0008325576782226562 secs
+training time: 0.0010578632354736328 secs
+training time: 0.0011920928955078125 secs
+training time: 0.0013518333435058594 secs
+training time: 0.001924276351928711 secs
+training time: 0.00131988525390625 secs
+training time: 0.0013968944549560547 secs
+training time: 0.001756906509399414 secs
+training time: 0.001850128173828125 secs
+training time: 0.0010271072387695312 secs
+training time: 0.0009191036224365234 secs
+training time: 0.0009660720825195312 secs
+training time: 0.0007081031799316406 secs
+training time: 0.0007579326629638672 secs
+training time: 0.0013930797576904297 secs
+training time: 0.0019283294677734375 secs
+training time: 0.001964092254638672 secs
+training time: 0.001146078109741211 secs
+training time: 0.001728057861328125 secs
+get_learning_curve execution time: 0.325410 secs
+Traceback (most recent call last):
+  File "DecisionTree.py", line 43, in <module>
+    main()
+  File "DecisionTree.py", line 40, in main
+    plot_learning_curves("./results/medicalmost/dt_results_mc.pickle", "Medical Cost Data - Decision Tree")
+  File "/Users/Jphild/Documents/Courses/Georgia Tech/Machine Learning/Assignment 1/utilities.py", line 118, in plot_learning_curves
+    with open(result, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: './results/medicalmost/dt_results_mc.pickle'
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 DecisionTree.py
+training time: 0.0017580986022949219 secs
+training time: 0.0010581016540527344 secs
+training time: 0.0009071826934814453 secs
+training time: 0.0011601448059082031 secs
+training time: 0.0011339187622070312 secs
+training time: 0.001260995864868164 secs
+training time: 0.0025191307067871094 secs
+training time: 0.001504659652709961 secs
+training time: 0.0016829967498779297 secs
+training time: 0.0017490386962890625 secs
+training time: 0.0007779598236083984 secs
+training time: 0.0005772113800048828 secs
+training time: 0.0008740425109863281 secs
+training time: 0.002061128616333008 secs
+training time: 0.0012738704681396484 secs
+training time: 0.0020020008087158203 secs
+training time: 0.0012390613555908203 secs
+training time: 0.001580953598022461 secs
+training time: 0.0016329288482666016 secs
+training time: 0.0016698837280273438 secs
+training time: 0.0007350444793701172 secs
+training time: 0.0010268688201904297 secs
+training time: 0.0010759830474853516 secs
+training time: 0.0013799667358398438 secs
+training time: 0.0008389949798583984 secs
+training time: 0.0013272762298583984 secs
+training time: 0.0014340877532958984 secs
+training time: 0.002332925796508789 secs
+training time: 0.001605987548828125 secs
+training time: 0.0017511844635009766 secs
+training time: 0.001722097396850586 secs
+training time: 0.0008170604705810547 secs
+training time: 0.0007009506225585938 secs
+training time: 0.0015709400177001953 secs
+training time: 0.0011861324310302734 secs
+training time: 0.0011372566223144531 secs
+training time: 0.0016949176788330078 secs
+training time: 0.0015218257904052734 secs
+training time: 0.0019288063049316406 secs
+training time: 0.0016651153564453125 secs
+training time: 0.0009877681732177734 secs
+training time: 0.000804901123046875 secs
+training time: 0.0011260509490966797 secs
+training time: 0.003267049789428711 secs
+training time: 0.0008141994476318359 secs
+training time: 0.0012149810791015625 secs
+training time: 0.0016379356384277344 secs
+training time: 0.0014510154724121094 secs
+training time: 0.0017430782318115234 secs
+training time: 0.0017032623291015625 secs
+get_learning_curve execution time: 0.348599 secs
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 DecisionTree.py
+training time: 0.001837015151977539 secs
+training time: 0.0009350776672363281 secs
+training time: 0.0008878707885742188 secs
+training time: 0.0011048316955566406 secs
+training time: 0.0011110305786132812 secs
+training time: 0.0012040138244628906 secs
+training time: 0.0010380744934082031 secs
+training time: 0.0009427070617675781 secs
+training time: 0.0010881423950195312 secs
+training time: 0.002331972122192383 secs
+training time: 0.0009133815765380859 secs
+training time: 0.0011839866638183594 secs
+training time: 0.0011570453643798828 secs
+training time: 0.0009112358093261719 secs
+training time: 0.0010128021240234375 secs
+training time: 0.0223081111907959 secs
+training time: 0.0010037422180175781 secs
+training time: 0.0010650157928466797 secs
+training time: 0.0009870529174804688 secs
+training time: 0.0013360977172851562 secs
+training time: 0.0033769607543945312 secs
+training time: 0.0008046627044677734 secs
+training time: 0.000492095947265625 secs
+training time: 0.0008099079132080078 secs
+training time: 0.0007889270782470703 secs
+training time: 0.0030248165130615234 secs
+training time: 0.0013952255249023438 secs
+training time: 0.0010449886322021484 secs
+training time: 0.0011792182922363281 secs
+training time: 0.002026796340942383 secs
+training time: 0.0009238719940185547 secs
+training time: 0.0007219314575195312 secs
+training time: 0.0009038448333740234 secs
+training time: 0.0011031627655029297 secs
+training time: 0.0008897781372070312 secs
+training time: 0.0009160041809082031 secs
+training time: 0.001531839370727539 secs
+training time: 0.0010941028594970703 secs
+training time: 0.001007080078125 secs
+training time: 0.0032639503479003906 secs
+training time: 0.0006520748138427734 secs
+training time: 0.0007879734039306641 secs
+training time: 0.0010917186737060547 secs
+training time: 0.0010647773742675781 secs
+training time: 0.0009090900421142578 secs
+training time: 0.0010590553283691406 secs
+training time: 0.001008749008178711 secs
+training time: 0.0011658668518066406 secs
+training time: 0.004332065582275391 secs
+training time: 0.0012278556823730469 secs
+get_learning_curve execution time: 0.330895 secs
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 DecisionTree.py
+training time: 0.0017368793487548828 secs
+training time: 0.0010709762573242188 secs
+training time: 0.0009946823120117188 secs
+training time: 0.0009660720825195312 secs
+training time: 0.001032114028930664 secs
+training time: 0.00133514404296875 secs
+training time: 0.0017468929290771484 secs
+training time: 0.0012621879577636719 secs
+training time: 0.0013210773468017578 secs
+training time: 0.0022258758544921875 secs
+training time: 0.0008890628814697266 secs
+training time: 0.00090789794921875 secs
+training time: 0.00095367431640625 secs
+training time: 0.001360177993774414 secs
+training time: 0.0013170242309570312 secs
+training time: 0.0013251304626464844 secs
+training time: 0.0013630390167236328 secs
+training time: 0.001257181167602539 secs
+training time: 0.0029697418212890625 secs
+training time: 0.0014719963073730469 secs
+training time: 0.0008609294891357422 secs
+training time: 0.0008490085601806641 secs
+training time: 0.0007750988006591797 secs
+training time: 0.0012400150299072266 secs
+training time: 0.0013949871063232422 secs
+training time: 0.0013232231140136719 secs
+training time: 0.00125885009765625 secs
+training time: 0.0023398399353027344 secs
+training time: 0.0015578269958496094 secs
+training time: 0.0010399818420410156 secs
+training time: 0.0006158351898193359 secs
+training time: 0.0009160041809082031 secs
+training time: 0.0008549690246582031 secs
+training time: 0.002402067184448242 secs
+training time: 0.0011970996856689453 secs
+training time: 0.0015020370483398438 secs
+training time: 0.0013079643249511719 secs
+training time: 0.002749919891357422 secs
+training time: 0.0010149478912353516 secs
+training time: 0.0017337799072265625 secs
+training time: 0.0017948150634765625 secs
+training time: 0.0011272430419921875 secs
+training time: 0.0011200904846191406 secs
+training time: 0.001558065414428711 secs
+training time: 0.0015418529510498047 secs
+training time: 0.001641988754272461 secs
+training time: 0.0012750625610351562 secs
+training time: 0.0012958049774169922 secs
+training time: 0.0016369819641113281 secs
+training time: 0.002540111541748047 secs
+get_learning_curve execution time: 0.356702 secs
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 DecisionTree.py
+training time: 0.0014340877532958984 secs
+training time: 0.0008840560913085938 secs
+training time: 0.001039743423461914 secs
+training time: 0.0008919239044189453 secs
+training time: 0.0008730888366699219 secs
+training time: 0.0005979537963867188 secs
+training time: 0.0008361339569091797 secs
+training time: 0.0010480880737304688 secs
+training time: 0.0009002685546875 secs
+training time: 0.0012199878692626953 secs
+training time: 0.0014719963073730469 secs
+training time: 0.0005497932434082031 secs
+training time: 0.0007998943328857422 secs
+training time: 0.0012853145599365234 secs
+training time: 0.0008258819580078125 secs
+training time: 0.0012559890747070312 secs
+training time: 0.0009391307830810547 secs
+training time: 0.00138092041015625 secs
+training time: 0.0010831356048583984 secs
+training time: 0.0011239051818847656 secs
+training time: 0.0007202625274658203 secs
+training time: 0.0008099079132080078 secs
+training time: 0.009438037872314453 secs
+training time: 0.0013039112091064453 secs
+training time: 0.0009179115295410156 secs
+training time: 0.0010638236999511719 secs
+training time: 0.0008771419525146484 secs
+training time: 0.001093149185180664 secs
+training time: 0.0015571117401123047 secs
+training time: 0.001363992691040039 secs
+training time: 0.0017228126525878906 secs
+training time: 0.0006639957427978516 secs
+training time: 0.001653909683227539 secs
+training time: 0.0008180141448974609 secs
+training time: 0.000982046127319336 secs
+training time: 0.0010709762573242188 secs
+training time: 0.0008738040924072266 secs
+training time: 0.0012347698211669922 secs
+training time: 0.0010442733764648438 secs
+training time: 0.0006620883941650391 secs
+training time: 0.0009889602661132812 secs
+training time: 0.0010981559753417969 secs
+training time: 0.0008671283721923828 secs
+training time: 0.0009260177612304688 secs
+training time: 0.0010676383972167969 secs
+training time: 0.0009059906005859375 secs
+training time: 0.0011417865753173828 secs
+training time: 0.003663778305053711 secs
+training time: 0.0009529590606689453 secs
+training time: 0.000982046127319336 secs
+get_learning_curve execution time: 0.308530 secs
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 DecisionTree.py
+Traceback (most recent call last):
+  File "DecisionTree.py", line 43, in <module>
+    main()
+  File "DecisionTree.py", line 38, in main
+    run_decision_tree()
+  File "DecisionTree.py", line 28, in run_decision_tree
+    tx, ty, vx, vy = load_data_medicalcost("./dataset/medicalcost/processed_medicalcost.csv")
+  File "/Users/Jphild/Documents/Courses/Georgia Tech/Machine Learning/Assignment 1/utilities.py", line 155, in load_data_medicalcost
+    rows = random.sample(df.index.tolist(), 10000)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/random.py", line 318, in sample
+    raise ValueError("Sample larger than population or is negative")
+ValueError: Sample larger than population or is negative
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 DecisionTree.py
+training time: 0.001622915267944336 secs
+training time: 0.0008509159088134766 secs
+training time: 0.0008158683776855469 secs
+training time: 0.0007398128509521484 secs
+training time: 0.000759124755859375 secs
+training time: 0.0007569789886474609 secs
+training time: 0.0009348392486572266 secs
+training time: 0.0008640289306640625 secs
+training time: 0.0010418891906738281 secs
+training time: 0.0015323162078857422 secs
+training time: 0.0009038448333740234 secs
+training time: 0.0013852119445800781 secs
+training time: 0.0007112026214599609 secs
+training time: 0.0009300708770751953 secs
+training time: 0.0011477470397949219 secs
+training time: 0.0009799003601074219 secs
+training time: 0.0008711814880371094 secs
+training time: 0.0007901191711425781 secs
+training time: 0.0008211135864257812 secs
+training time: 0.0009658336639404297 secs
+training time: 0.0008838176727294922 secs
+training time: 0.0009427070617675781 secs
+training time: 0.0008299350738525391 secs
+training time: 0.0010492801666259766 secs
+training time: 0.0008120536804199219 secs
+training time: 0.0011820793151855469 secs
+training time: 0.0007841587066650391 secs
+training time: 0.00061798095703125 secs
+training time: 0.0006108283996582031 secs
+training time: 0.000530242919921875 secs
+training time: 0.0010638236999511719 secs
+training time: 0.0010900497436523438 secs
+training time: 0.0014200210571289062 secs
+training time: 0.0004680156707763672 secs
+training time: 0.0005290508270263672 secs
+training time: 0.0007469654083251953 secs
+training time: 0.0029141902923583984 secs
+training time: 0.0007729530334472656 secs
+training time: 0.00127410888671875 secs
+training time: 0.0005440711975097656 secs
+training time: 0.00047206878662109375 secs
+training time: 0.0006661415100097656 secs
+training time: 0.0005249977111816406 secs
+training time: 0.000885009765625 secs
+training time: 0.0009188652038574219 secs
+training time: 0.0009510517120361328 secs
+training time: 0.0008897781372070312 secs
+training time: 0.0008130073547363281 secs
+training time: 0.0009007453918457031 secs
+training time: 0.001238107681274414 secs
+get_learning_curve execution time: 0.247024 secs
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 DecisionTree.py
+training time: 0.0019609928131103516 secs
+training time: 0.0011219978332519531 secs
+training time: 0.0010120868682861328 secs
+training time: 0.0012710094451904297 secs
+training time: 0.0010781288146972656 secs
+training time: 0.0009388923645019531 secs
+training time: 0.0030269622802734375 secs
+training time: 0.0018880367279052734 secs
+training time: 0.0012929439544677734 secs
+training time: 0.0012090206146240234 secs
+training time: 0.00078582763671875 secs
+training time: 0.0010449886322021484 secs
+training time: 0.0009109973907470703 secs
+training time: 0.0019271373748779297 secs
+training time: 0.0011820793151855469 secs
+training time: 0.0009431838989257812 secs
+training time: 0.001277923583984375 secs
+training time: 0.0011069774627685547 secs
+training time: 0.0016579627990722656 secs
+training time: 0.0018520355224609375 secs
+training time: 0.0021431446075439453 secs
+training time: 0.0005578994750976562 secs
+training time: 0.0009109973907470703 secs
+training time: 0.0009987354278564453 secs
+training time: 0.000985860824584961 secs
+training time: 0.0011162757873535156 secs
+training time: 0.0012869834899902344 secs
+training time: 0.0009431838989257812 secs
+training time: 0.0013980865478515625 secs
+training time: 0.001435995101928711 secs
+training time: 0.001068115234375 secs
+training time: 0.0005869865417480469 secs
+training time: 0.0009222030639648438 secs
+training time: 0.0011882781982421875 secs
+training time: 0.002382993698120117 secs
+training time: 0.0010559558868408203 secs
+training time: 0.0011830329895019531 secs
+training time: 0.0011048316955566406 secs
+training time: 0.0012869834899902344 secs
+training time: 0.0017600059509277344 secs
+training time: 0.0008709430694580078 secs
+training time: 0.0011358261108398438 secs
+training time: 0.0017647743225097656 secs
+training time: 0.0010249614715576172 secs
+training time: 0.0011219978332519531 secs
+training time: 0.0009238719940185547 secs
+training time: 0.0014369487762451172 secs
+training time: 0.0014111995697021484 secs
+training time: 0.0015711784362792969 secs
+training time: 0.0015230178833007812 secs
+get_learning_curve execution time: 0.317221 secs
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 DecisionTree.py
+training time: 0.001634836196899414 secs
+training time: 0.0008950233459472656 secs
+training time: 0.000926971435546875 secs
+training time: 0.0008330345153808594 secs
+training time: 0.0009207725524902344 secs
+training time: 0.0009467601776123047 secs
+training time: 0.0012619495391845703 secs
+training time: 0.0010509490966796875 secs
+training time: 0.0011687278747558594 secs
+training time: 0.0016620159149169922 secs
+training time: 0.0005629062652587891 secs
+training time: 0.0008039474487304688 secs
+training time: 0.0006639957427978516 secs
+training time: 0.0011949539184570312 secs
+training time: 0.0012469291687011719 secs
+training time: 0.0015041828155517578 secs
+training time: 0.0007119178771972656 secs
+training time: 0.0008358955383300781 secs
+training time: 0.0014061927795410156 secs
+training time: 0.0014109611511230469 secs
+training time: 0.0010120868682861328 secs
+training time: 0.0006363391876220703 secs
+training time: 0.0015087127685546875 secs
+training time: 0.0009527206420898438 secs
+training time: 0.0012469291687011719 secs
+training time: 0.0009660720825195312 secs
+training time: 0.0014078617095947266 secs
+training time: 0.0007169246673583984 secs
+training time: 0.0011510848999023438 secs
+training time: 0.0012826919555664062 secs
+training time: 0.0008640289306640625 secs
+training time: 0.0011012554168701172 secs
+training time: 0.0005590915679931641 secs
+training time: 0.0006101131439208984 secs
+training time: 0.001567840576171875 secs
+training time: 0.000993967056274414 secs
+training time: 0.0012857913970947266 secs
+training time: 0.0008101463317871094 secs
+training time: 0.0008132457733154297 secs
+training time: 0.0011281967163085938 secs
+training time: 0.0015871524810791016 secs
+training time: 0.0007977485656738281 secs
+training time: 0.0005707740783691406 secs
+training time: 0.0005941390991210938 secs
+training time: 0.000885009765625 secs
+training time: 0.0013887882232666016 secs
+training time: 0.0013282299041748047 secs
+training time: 0.0007650852203369141 secs
+training time: 0.0011777877807617188 secs
+training time: 0.0010101795196533203 secs
+get_learning_curve execution time: 0.280306 secs
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 DecisionTree.py
+training time: 0.0014851093292236328 secs
+training time: 0.0008749961853027344 secs
+training time: 0.0009751319885253906 secs
+training time: 0.0010602474212646484 secs
+training time: 0.0010750293731689453 secs
+training time: 0.0008509159088134766 secs
+training time: 0.0015380382537841797 secs
+training time: 0.0012969970703125 secs
+training time: 0.0015299320220947266 secs
+training time: 0.0016858577728271484 secs
+training time: 0.0007851123809814453 secs
+training time: 0.0009629726409912109 secs
+training time: 0.00096893310546875 secs
+training time: 0.0009851455688476562 secs
+training time: 0.0011546611785888672 secs
+training time: 0.0011088848114013672 secs
+training time: 0.0012907981872558594 secs
+training time: 0.0013391971588134766 secs
+training time: 0.0015578269958496094 secs
+training time: 0.0014019012451171875 secs
+training time: 0.0005750656127929688 secs
+training time: 0.000614166259765625 secs
+training time: 0.0014231204986572266 secs
+training time: 0.0010058879852294922 secs
+training time: 0.0010502338409423828 secs
+training time: 0.001964092254638672 secs
+training time: 0.0012238025665283203 secs
+training time: 0.0012907981872558594 secs
+training time: 0.0013020038604736328 secs
+training time: 0.001644134521484375 secs
+training time: 0.0009920597076416016 secs
+training time: 0.0005750656127929688 secs
+training time: 0.0009028911590576172 secs
+training time: 0.0011026859283447266 secs
+training time: 0.001772165298461914 secs
+training time: 0.0011739730834960938 secs
+training time: 0.0007910728454589844 secs
+training time: 0.0008668899536132812 secs
+training time: 0.0016047954559326172 secs
+training time: 0.0017838478088378906 secs
+training time: 0.0008478164672851562 secs
+training time: 0.0008702278137207031 secs
+training time: 0.001055002212524414 secs
+training time: 0.0007269382476806641 secs
+training time: 0.0011110305786132812 secs
+training time: 0.0011289119720458984 secs
+training time: 0.001338958740234375 secs
+training time: 0.0018029212951660156 secs
+training time: 0.001325845718383789 secs
+training time: 0.0018796920776367188 secs
+get_learning_curve execution time: 0.277004 secs
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 DecisionTree.py
+training time: 0.0015060901641845703 secs
+training time: 0.0008387565612792969 secs
+training time: 0.0008959770202636719 secs
+training time: 0.0009729862213134766 secs
+training time: 0.0010297298431396484 secs
+training time: 0.0009541511535644531 secs
+training time: 0.0010519027709960938 secs
+training time: 0.0011603832244873047 secs
+training time: 0.0011811256408691406 secs
+training time: 0.001644134521484375 secs
+training time: 0.0008378028869628906 secs
+training time: 0.0007669925689697266 secs
+training time: 0.0009129047393798828 secs
+training time: 0.0015573501586914062 secs
+training time: 0.0009970664978027344 secs
+training time: 0.0009961128234863281 secs
+training time: 0.0014090538024902344 secs
+training time: 0.001020193099975586 secs
+training time: 0.0014379024505615234 secs
+training time: 0.0011320114135742188 secs
+training time: 0.0008900165557861328 secs
+training time: 0.0010449886322021484 secs
+training time: 0.0010890960693359375 secs
+training time: 0.0009300708770751953 secs
+training time: 0.0016720294952392578 secs
+training time: 0.0017309188842773438 secs
+training time: 0.0028238296508789062 secs
+training time: 0.0011141300201416016 secs
+training time: 0.0013496875762939453 secs
+training time: 0.001341104507446289 secs
+training time: 0.001374959945678711 secs
+training time: 0.0014331340789794922 secs
+training time: 0.0009291172027587891 secs
+training time: 0.0008702278137207031 secs
+training time: 0.0012269020080566406 secs
+training time: 0.0011739730834960938 secs
+training time: 0.0010139942169189453 secs
+training time: 0.0011050701141357422 secs
+training time: 0.0010738372802734375 secs
+training time: 0.0011930465698242188 secs
+training time: 0.0008509159088134766 secs
+training time: 0.0013260841369628906 secs
+training time: 0.0009129047393798828 secs
+training time: 0.0008628368377685547 secs
+training time: 0.001313924789428711 secs
+training time: 0.0010709762573242188 secs
+training time: 0.0011358261108398438 secs
+training time: 0.0010399818420410156 secs
+training time: 0.001500844955444336 secs
+training time: 0.0012621879577636719 secs
+get_learning_curve execution time: 0.293348 secs
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 DecisionTree.py
+training time: 0.001500844955444336 secs
+training time: 0.0009088516235351562 secs
+training time: 0.0010068416595458984 secs
+training time: 0.0009059906005859375 secs
+training time: 0.0008931159973144531 secs
+training time: 0.0008971691131591797 secs
+training time: 0.0010330677032470703 secs
+training time: 0.0011172294616699219 secs
+training time: 0.0013508796691894531 secs
+training time: 0.001180887222290039 secs
+training time: 0.0008702278137207031 secs
+training time: 0.0010731220245361328 secs
+training time: 0.0012960433959960938 secs
+training time: 0.0012290477752685547 secs
+training time: 0.0010788440704345703 secs
+training time: 0.0006620883941650391 secs
+training time: 0.0010268688201904297 secs
+training time: 0.0010399818420410156 secs
+training time: 0.0013623237609863281 secs
+training time: 0.0011410713195800781 secs
+training time: 0.0008199214935302734 secs
+training time: 0.0011310577392578125 secs
+training time: 0.0010418891906738281 secs
+training time: 0.0008831024169921875 secs
+training time: 0.0010409355163574219 secs
+training time: 0.0008409023284912109 secs
+training time: 0.0006673336029052734 secs
+training time: 0.0012140274047851562 secs
+training time: 0.001132965087890625 secs
+training time: 0.001138925552368164 secs
+training time: 0.000701904296875 secs
+training time: 0.0009508132934570312 secs
+training time: 0.0009362697601318359 secs
+training time: 0.0009140968322753906 secs
+training time: 0.0009629726409912109 secs
+training time: 0.0009579658508300781 secs
+training time: 0.0010590553283691406 secs
+training time: 0.0007319450378417969 secs
+training time: 0.0011181831359863281 secs
+training time: 0.0014584064483642578 secs
+training time: 0.0009181499481201172 secs
+training time: 0.0009391307830810547 secs
+training time: 0.0009098052978515625 secs
+training time: 0.0009770393371582031 secs
+training time: 0.0006787776947021484 secs
+training time: 0.0006420612335205078 secs
+training time: 0.0009779930114746094 secs
+training time: 0.0010569095611572266 secs
+training time: 0.0013751983642578125 secs
+training time: 0.0011792182922363281 secs
+get_learning_curve execution time: 0.268890 secs
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 AdaBoost.py
+Traceback (most recent call last):
+  File "AdaBoost.py", line 48, in <module>
+    main()
+  File "AdaBoost.py", line 44, in main
+    run_adaboost()
+  File "AdaBoost.py", line 23, in run_adaboost
+    tx, ty, vx, vy = load_data("./dataset/clinvar/processed_2.csv")
+  File "/Users/Jphild/Documents/Courses/Georgia Tech/Machine Learning/Assignment 1/utilities.py", line 133, in load_data
+    df = pd.read_csv(file_path)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/io/parsers.py", line 678, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/io/parsers.py", line 440, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/io/parsers.py", line 787, in __init__
+    self._make_engine(self.engine)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/io/parsers.py", line 1014, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/io/parsers.py", line 1708, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 384, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 695, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: File b'./dataset/clinvar/processed_2.csv' does not exist
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 AdaBoost.py
+Traceback (most recent call last):
+  File "AdaBoost.py", line 48, in <module>
+    main()
+  File "AdaBoost.py", line 44, in main
+    run_adaboost()
+  File "AdaBoost.py", line 23, in run_adaboost
+    tx, ty, vx, vy = load_data("./dataset/clinvar/medicalcost/processed_2.csv")
+  File "/Users/Jphild/Documents/Courses/Georgia Tech/Machine Learning/Assignment 1/utilities.py", line 133, in load_data
+    df = pd.read_csv(file_path)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/io/parsers.py", line 678, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/io/parsers.py", line 440, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/io/parsers.py", line 787, in __init__
+    self._make_engine(self.engine)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/io/parsers.py", line 1014, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/io/parsers.py", line 1708, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 384, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 695, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: File b'./dataset/clinvar/medicalcost/processed_2.csv' does not exist
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 AdaBoost.py
+Traceback (most recent call last):
+  File "AdaBoost.py", line 48, in <module>
+    main()
+  File "AdaBoost.py", line 44, in main
+    run_adaboost()
+  File "AdaBoost.py", line 23, in run_adaboost
+    tx, ty, vx, vy = load_data("./dataset/clinvar/processed_2.csv")
+  File "/Users/Jphild/Documents/Courses/Georgia Tech/Machine Learning/Assignment 1/utilities.py", line 133, in load_data
+    df = pd.read_csv(file_path)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/io/parsers.py", line 678, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/io/parsers.py", line 440, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/io/parsers.py", line 787, in __init__
+    self._make_engine(self.engine)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/io/parsers.py", line 1014, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/io/parsers.py", line 1708, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 384, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 695, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: File b'./dataset/clinvar/processed_2.csv' does not exist
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 AdaBoost.py
+training time: 1.0438263416290283 secs
+training time: 2.2198851108551025 secs
+training time: 3.5679879188537598 secs
+training time: 5.0838518142700195 secs
+training time: 6.546510696411133 secs
+training time: 7.98419189453125 secs
+training time: 9.75550627708435 secs
+training time: 12.663283824920654 secs
+training time: 14.12261700630188 secs
+training time: 14.579598903656006 secs
+training time: 1.198362112045288 secs
+training time: 2.5981078147888184 secs
+training time: 3.9479501247406006 secs
+training time: 4.971941947937012 secs
+training time: 6.71438193321228 secs
+training time: 8.44503378868103 secs
+training time: 11.364804029464722 secs
+^CTraceback (most recent call last):
+  File "AdaBoost.py", line 48, in <module>
+    main()
+  File "AdaBoost.py", line 44, in main
+    run_adaboost()
+  File "AdaBoost.py", line 26, in run_adaboost
+    a, b, c = get_learning_curve(bdt, tx, ty, vx, vy, cv=5, train_sizes=ts)
+  File "/Users/Jphild/Documents/Courses/Georgia Tech/Machine Learning/Assignment 1/utilities.py", line 27, in timed_function
+    output = func(*args, **kwargs)
+  File "/Users/Jphild/Documents/Courses/Georgia Tech/Machine Learning/Assignment 1/utilities.py", line 67, in get_learning_curve
+    estimator.fit(subx, suby)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/ensemble/weight_boosting.py", line 413, in fit
+    return super(AdaBoostClassifier, self).fit(X, y, sample_weight)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/ensemble/weight_boosting.py", line 145, in fit
+    random_state)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/ensemble/weight_boosting.py", line 477, in _boost
+    random_state)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/ensemble/weight_boosting.py", line 541, in _boost_discrete
+    estimator.fit(X, y, sample_weight=sample_weight)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/tree/tree.py", line 790, in fit
+    X_idx_sorted=X_idx_sorted)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/tree/tree.py", line 362, in fit
+    builder.build(self.tree_, X, y, sample_weight, X_idx_sorted)
+KeyboardInterrupt
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 AdaBoost.py
+training time: 1.2258989810943604 secs
+training time: 2.775473117828369 secs
+training time: 4.099121809005737 secs
+training time: 5.314298152923584 secs
+training time: 7.0842978954315186 secs
+training time: 9.130354881286621 secs
+training time: 10.040572166442871 secs
+training time: 13.1529860496521 secs
+training time: 16.24561619758606 secs
+training time: 16.43206810951233 secs
+training time: 1.1524229049682617 secs
+training time: 2.387160062789917 secs
+training time: 3.758244037628174 secs
+training time: 5.447443008422852 secs
+training time: 6.9390709400177 secs
+training time: 8.564867973327637 secs
+training time: 9.559283018112183 secs
+training time: 12.920414924621582 secs
+training time: 13.284142017364502 secs
+training time: 13.977920055389404 secs
+training time: 1.05930495262146 secs
+training time: 2.5510342121124268 secs
+training time: 3.887925863265991 secs
+training time: 4.731954336166382 secs
+training time: 6.215479850769043 secs
+training time: 7.8382158279418945 secs
+training time: 9.32562804222107 secs
+training time: 11.318783044815063 secs
+training time: 12.65928864479065 secs
+training time: 14.316124200820923 secs
+training time: 1.1131529808044434 secs
+training time: 2.402661085128784 secs
+training time: 3.4359419345855713 secs
+training time: 5.756452798843384 secs
+training time: 6.956177711486816 secs
+training time: 8.311225891113281 secs
+training time: 9.751852035522461 secs
+training time: 11.516252994537354 secs
+training time: 13.550519943237305 secs
+training time: 13.626937866210938 secs
+training time: 1.0067291259765625 secs
+training time: 2.087028980255127 secs
+training time: 3.461609125137329 secs
+training time: 4.87152099609375 secs
+training time: 6.144372940063477 secs
+training time: 8.611767768859863 secs
+training time: 9.757399082183838 secs
+training time: 9.924407243728638 secs
+training time: 11.807719230651855 secs
+training time: 12.71541142463684 secs
+get_learning_curve execution time: 396.687694 secs
+Traceback (most recent call last):
+  File "AdaBoost.py", line 48, in <module>
+    main()
+  File "AdaBoost.py", line 44, in main
+    run_adaboost()
+  File "AdaBoost.py", line 28, in run_adaboost
+    with open("./results/clinvar/bdt_results_2.pickle", "wb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: './results/clinvar/bdt_results_2.pickle'
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 AdaBoost.py
+training time: 1.111691951751709 secs
+training time: 2.3215019702911377 secs
+training time: 3.696505069732666 secs
+training time: 5.291357040405273 secs
+training time: 7.460568189620972 secs
+training time: 8.000261306762695 secs
+training time: 12.259408950805664 secs
+training time: 11.831437826156616 secs
+training time: 13.770215272903442 secs
+training time: 16.465953826904297 secs
+training time: 1.258470058441162 secs
+training time: 3.078399896621704 secs
+training time: 3.8295538425445557 secs
+training time: 5.589118003845215 secs
+training time: 6.93178915977478 secs
+training time: 9.093371152877808 secs
+training time: 10.440319061279297 secs
+training time: 13.908579111099243 secs
+training time: 13.966182947158813 secs
+training time: 16.19348692893982 secs
+training time: 1.1474859714508057 secs
+training time: 2.456022024154663 secs
+training time: 3.9668190479278564 secs
+training time: 5.475005865097046 secs
+training time: 6.851274013519287 secs
+training time: 8.95700192451477 secs
+training time: 11.058840036392212 secs
+training time: 12.50228214263916 secs
+training time: 13.660337209701538 secs
+training time: 16.126075983047485 secs
+training time: 1.11474609375 secs
+training time: 2.324871063232422 secs
+training time: 3.7421350479125977 secs
+training time: 5.696820020675659 secs
+training time: 7.045674085617065 secs
+training time: 9.162375926971436 secs
+training time: 11.501164674758911 secs
+training time: 12.901830911636353 secs
+training time: 15.055982112884521 secs
+training time: 17.065593242645264 secs
+training time: 1.1386981010437012 secs
+training time: 2.5364580154418945 secs
+training time: 4.706502199172974 secs
+training time: 5.632658958435059 secs
+training time: 7.1919636726379395 secs
+training time: 8.383341073989868 secs
+training time: 11.11231780052185 secs
+training time: 13.193322896957397 secs
+training time: 15.02742600440979 secs
+training time: 16.56393599510193 secs
+get_learning_curve execution time: 433.453461 secs
+Traceback (most recent call last):
+  File "AdaBoost.py", line 48, in <module>
+    main()
+  File "AdaBoost.py", line 44, in main
+    run_adaboost()
+  File "AdaBoost.py", line 28, in run_adaboost
+    with open("./results/clinvar/bdt_results_2.pickle", "wb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: './results/clinvar/bdt_results_2.pickle'
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 AdaBoost.py
+training time: 0.9781601428985596 secs
+training time: 2.1442298889160156 secs
+training time: 3.4685139656066895 secs
+training time: 5.313585996627808 secs
+training time: 6.348677158355713 secs
+training time: 8.161365032196045 secs
+training time: 10.260999917984009 secs
+training time: 13.340281248092651 secs
+training time: 15.451485872268677 secs
+^CTraceback (most recent call last):
+  File "AdaBoost.py", line 48, in <module>
+    main()
+  File "AdaBoost.py", line 44, in main
+    run_adaboost()
+  File "AdaBoost.py", line 26, in run_adaboost
+    a, b, c = get_learning_curve(bdt, tx, ty, vx, vy, cv=5, train_sizes=ts)
+  File "/Users/Jphild/Documents/Courses/Georgia Tech/Machine Learning/Assignment 1/utilities.py", line 27, in timed_function
+    output = func(*args, **kwargs)
+  File "/Users/Jphild/Documents/Courses/Georgia Tech/Machine Learning/Assignment 1/utilities.py", line 67, in get_learning_curve
+    estimator.fit(subx, suby)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/ensemble/weight_boosting.py", line 413, in fit
+    return super(AdaBoostClassifier, self).fit(X, y, sample_weight)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/ensemble/weight_boosting.py", line 145, in fit
+    random_state)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/ensemble/weight_boosting.py", line 477, in _boost
+    random_state)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/ensemble/weight_boosting.py", line 541, in _boost_discrete
+    estimator.fit(X, y, sample_weight=sample_weight)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/tree/tree.py", line 790, in fit
+    X_idx_sorted=X_idx_sorted)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/tree/tree.py", line 362, in fit
+    builder.build(self.tree_, X, y, sample_weight, X_idx_sorted)
+KeyboardInterrupt
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 SVM
+/Library/Frameworks/Python.framework/Versions/3.6/Resources/Python.app/Contents/MacOS/Python: can't open file 'SVM': [Errno 2] No such file or directory
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 SVM.py
+training time: 0.3871619701385498 secs
+training time: 1.182647943496704 secs
+training time: 2.1505072116851807 secs
+training time: 3.080155849456787 secs
+training time: 4.7923173904418945 secs
+training time: 6.074774980545044 secs
+training time: 7.286541938781738 secs
+training time: 9.654665231704712 secs
+training time: 9.787782907485962 secs
+training time: 10.964915752410889 secs
+get_learning_curve execution time: 56.694842 secs
+training time: 0.44278502464294434 secs
+training time: 1.6657660007476807 secs
+training time: 2.3815269470214844 secs
+training time: 3.6135013103485107 secs
+training time: 4.292670011520386 secs
+training time: 5.730545997619629 secs
+training time: 7.030418872833252 secs
+training time: 8.653304100036621 secs
+training time: 9.19835114479065 secs
+training time: 11.768316984176636 secs
+get_learning_curve execution time: 55.976779 secs
+training time: 4.838814973831177 secs
+training time: 15.219995975494385 secs
+training time: 50.81125807762146 secs
+training time: 83.9545509815216 secs
+training time: 132.18519926071167 secs
+training time: 203.391273021698 secs
+training time: 200.73954725265503 secs
+training time: 316.1496820449829 secs
+training time: 492.1357479095459 secs
+training time: 513.0801060199738 secs
+get_learning_curve execution time: 2434.242529 secs
+training time: 0.24463415145874023 secs
+training time: 0.959510087966919 secs
+training time: 1.4749298095703125 secs
+training time: 2.1133499145507812 secs
+training time: 3.05110502243042 secs
+training time: 4.768555164337158 secs
+training time: 4.621457815170288 secs
+training time: 5.389615774154663 secs
+training time: 7.093104839324951 secs
+training time: 7.782621383666992 secs
+get_learning_curve execution time: 38.361906 secs
+training time: 0.2819700241088867 secs
+training time: 1.0356688499450684 secs
+training time: 1.4401190280914307 secs
+training time: 1.988239049911499 secs
+training time: 3.353787899017334 secs
+training time: 2.845637083053589 secs
+training time: 3.811645984649658 secs
+training time: 5.217806100845337 secs
+training time: 6.267026901245117 secs
+training time: 7.3786046504974365 secs
+get_learning_curve execution time: 34.497670 secs
+training time: 3.456157922744751 secs
+training time: 14.692358016967773 secs
+training time: 32.05386710166931 secs
+training time: 72.23921585083008 secs
+training time: 89.64484715461731 secs
+training time: 123.54108166694641 secs
+training time: 231.03236079216003 secs
+training time: 351.99234199523926 secs
+training time: 417.48215436935425 secs
+training time: 531.1944689750671 secs
+get_learning_curve execution time: 2237.310702 secs
+Segmentation fault: 11
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 SVM.py
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 SVM.py
+training time: 0.21692800521850586 secs
+training time: 0.4819636344909668 secs
+training time: 0.8292500972747803 secs
+training time: 1.376662015914917 secs
+training time: 1.9773190021514893 secs
+training time: 2.5915117263793945 secs
+training time: 3.185232162475586 secs
+training time: 4.091561794281006 secs
+training time: 5.1422340869903564 secs
+training time: 5.868559122085571 secs
+training time: 0.22621393203735352 secs
+training time: 0.5107839107513428 secs
+training time: 0.9072997570037842 secs
+training time: 1.5067851543426514 secs
+training time: 2.117741823196411 secs
+training time: 2.852926015853882 secs
+training time: 3.8405230045318604 secs
+training time: 4.5594322681427 secs
+training time: 5.099426031112671 secs
+training time: 5.7443482875823975 secs
+training time: 0.22338199615478516 secs
+training time: 0.6278977394104004 secs
+training time: 0.9912629127502441 secs
+training time: 1.5444753170013428 secs
+training time: 2.3745341300964355 secs
+training time: 3.0075161457061768 secs
+training time: 3.5802059173583984 secs
+training time: 4.712090015411377 secs
+training time: 4.552716016769409 secs
+training time: 5.286883115768433 secs
+training time: 0.23636603355407715 secs
+training time: 0.630455732345581 secs
+training time: 1.035264015197754 secs
+training time: 1.8378119468688965 secs
+training time: 2.2736599445343018 secs
+training time: 3.3300228118896484 secs
+training time: 3.1785409450531006 secs
+training time: 3.729865312576294 secs
+training time: 4.869134187698364 secs
+training time: 5.917999982833862 secs
+training time: 0.2215728759765625 secs
+training time: 0.5006868839263916 secs
+training time: 0.8832087516784668 secs
+training time: 1.520233154296875 secs
+training time: 2.6808340549468994 secs
+training time: 3.5942089557647705 secs
+training time: 4.143620014190674 secs
+training time: 4.377090215682983 secs
+training time: 5.282603979110718 secs
+training time: 5.223052024841309 secs
+get_learning_curve execution time: 139.449620 secs
+training time: 0.2528049945831299 secs
+training time: 0.5760867595672607 secs
+training time: 0.944429874420166 secs
+training time: 1.3844568729400635 secs
+training time: 2.0367610454559326 secs
+training time: 2.706295967102051 secs
+training time: 3.2334952354431152 secs
+training time: 3.7915990352630615 secs
+training time: 4.348325252532959 secs
+training time: 5.291245222091675 secs
+get_learning_curve execution time: 25.235176 secs
+training time: 0.22627472877502441 secs
+training time: 0.49431800842285156 secs
+training time: 1.119610071182251 secs
+training time: 1.5966880321502686 secs
+training time: 2.220417022705078 secs
+training time: 2.8876967430114746 secs
+training time: 3.1434543132781982 secs
+training time: 3.5773890018463135 secs
+training time: 4.240967035293579 secs
+training time: 4.899507999420166 secs
+training time: 0.20960378646850586 secs
+training time: 0.47043895721435547 secs
+training time: 0.7999627590179443 secs
+training time: 1.3274240493774414 secs
+training time: 2.029046058654785 secs
+training time: 3.5555477142333984 secs
+training time: 4.223613977432251 secs
+training time: 3.755735158920288 secs
+training time: 4.353446006774902 secs
+training time: 5.540047883987427 secs
+training time: 0.25055480003356934 secs
+training time: 0.5943658351898193 secs
+training time: 1.011404037475586 secs
+training time: 1.5212209224700928 secs
+training time: 1.8961620330810547 secs
+training time: 2.5057549476623535 secs
+training time: 3.294977903366089 secs
+training time: 3.8399648666381836 secs
+training time: 4.164283752441406 secs
+training time: 5.002229928970337 secs
+training time: 0.20942115783691406 secs
+training time: 0.4724910259246826 secs
+training time: 0.8239967823028564 secs
+training time: 1.304286003112793 secs
+training time: 1.8195528984069824 secs
+training time: 2.396984100341797 secs
+training time: 2.96540904045105 secs
+training time: 3.584991931915283 secs
+training time: 4.205633163452148 secs
+training time: 5.016522169113159 secs
+training time: 0.21393418312072754 secs
+training time: 0.452869176864624 secs
+training time: 0.7898643016815186 secs
+training time: 1.287139892578125 secs
+training time: 1.8896081447601318 secs
+training time: 2.403810977935791 secs
+training time: 2.956037998199463 secs
+training time: 3.5357837677001953 secs
+training time: 4.247770071029663 secs
+training time: 4.895410060882568 secs
+get_learning_curve execution time: 123.624712 secs
+training time: 0.2201402187347412 secs
+training time: 0.4729328155517578 secs
+training time: 0.9235539436340332 secs
+training time: 1.4546589851379395 secs
+training time: 1.8601789474487305 secs
+training time: 2.4315178394317627 secs
+training time: 2.974409818649292 secs
+training time: 3.6778810024261475 secs
+training time: 4.303562879562378 secs
+training time: 4.980829954147339 secs
+get_learning_curve execution time: 23.939481 secs
+Segmentation fault: 11
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 SVM.py
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 SVM.py
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 SVM.py
+training time: 0.21126294136047363 secs
+training time: 0.4811239242553711 secs
+training time: 0.8593981266021729 secs
+training time: 1.4298491477966309 secs
+training time: 1.9954719543457031 secs
+training time: 2.5798211097717285 secs
+training time: 3.2554049491882324 secs
+training time: 3.976810932159424 secs
+training time: 4.6205079555511475 secs
+training time: 5.279355049133301 secs
+training time: 0.22058391571044922 secs
+training time: 0.48403191566467285 secs
+training time: 0.8683829307556152 secs
+training time: 1.4177639484405518 secs
+training time: 1.9988551139831543 secs
+training time: 2.520758867263794 secs
+training time: 3.1182940006256104 secs
+training time: 3.7920687198638916 secs
+training time: 4.47402811050415 secs
+training time: 5.157320976257324 secs
+training time: 0.21891498565673828 secs
+training time: 0.5013682842254639 secs
+training time: 0.8826761245727539 secs
+training time: 1.3827269077301025 secs
+training time: 1.9796228408813477 secs
+training time: 2.5403151512145996 secs
+training time: 3.1981709003448486 secs
+training time: 3.9344849586486816 secs
+training time: 4.409513235092163 secs
+training time: 5.160830974578857 secs
+training time: 0.2132737636566162 secs
+training time: 0.4726898670196533 secs
+training time: 0.8660500049591064 secs
+training time: 1.3708620071411133 secs
+training time: 1.9646813869476318 secs
+training time: 2.5612080097198486 secs
+training time: 3.2535321712493896 secs
+training time: 3.7993662357330322 secs
+training time: 4.497846841812134 secs
+training time: 5.2535459995269775 secs
+training time: 0.21703100204467773 secs
+training time: 0.4997131824493408 secs
+training time: 0.8330159187316895 secs
+training time: 1.36319899559021 secs
+training time: 2.0393567085266113 secs
+training time: 2.5617289543151855 secs
+training time: 3.221449851989746 secs
+training time: 3.8217170238494873 secs
+training time: 4.349132061004639 secs
+training time: 4.891451120376587 secs
+get_learning_curve execution time: 124.460523 secs
+training time: 0.21503591537475586 secs
+training time: 0.5036201477050781 secs
+training time: 0.95564866065979 secs
+training time: 1.5957589149475098 secs
+training time: 1.8863229751586914 secs
+training time: 2.417387008666992 secs
+training time: 2.9186770915985107 secs
+training time: 3.5969107151031494 secs
+training time: 4.202704906463623 secs
+training time: 4.9770941734313965 secs
+training time: 0.21299314498901367 secs
+training time: 0.45659589767456055 secs
+training time: 0.815039873123169 secs
+training time: 1.2955751419067383 secs
+training time: 1.836534023284912 secs
+training time: 2.414208173751831 secs
+training time: 2.983057975769043 secs
+training time: 3.551452875137329 secs
+training time: 4.195855140686035 secs
+training time: 4.952149868011475 secs
+training time: 0.217390775680542 secs
+training time: 0.46564412117004395 secs
+training time: 0.8365159034729004 secs
+training time: 1.330414056777954 secs
+training time: 1.8553450107574463 secs
+training time: 2.3908941745758057 secs
+training time: 2.9856700897216797 secs
+training time: 3.5843052864074707 secs
+training time: 4.311073064804077 secs
+training time: 4.929376125335693 secs
+training time: 0.20721101760864258 secs
+training time: 0.4662189483642578 secs
+training time: 0.8117129802703857 secs
+training time: 1.4000651836395264 secs
+training time: 1.8621702194213867 secs
+training time: 2.4119181632995605 secs
+training time: 2.942878007888794 secs
+training time: 3.6740894317626953 secs
+training time: 4.345900058746338 secs
+training time: 4.878445148468018 secs
+training time: 0.2128281593322754 secs
+training time: 0.46509790420532227 secs
+training time: 0.7844951152801514 secs
+training time: 1.3060269355773926 secs
+training time: 1.9024410247802734 secs
+training time: 2.3786370754241943 secs
+training time: 3.173814058303833 secs
+training time: 4.231302738189697 secs
+training time: 5.424957036972046 secs
+training time: 5.552813768386841 secs
+get_learning_curve execution time: 120.699925 secs
+training time: 0.24097800254821777 secs
+training time: 0.5695910453796387 secs
+training time: 1.026304006576538 secs
+training time: 1.8176801204681396 secs
+training time: 2.3570523262023926 secs
+training time: 2.880370855331421 secs
+training time: 3.713811159133911 secs
+training time: 4.614187002182007 secs
+training time: 4.562078952789307 secs
+training time: 5.0136072635650635 secs
+training time: 0.20926809310913086 secs
+training time: 0.48119688034057617 secs
+training time: 0.84079909324646 secs
+training time: 1.3819618225097656 secs
+training time: 1.9886231422424316 secs
+training time: 2.4154770374298096 secs
+training time: 2.998012065887451 secs
+training time: 3.591204881668091 secs
+training time: 4.388529300689697 secs
+training time: 5.060051918029785 secs
+training time: 0.2144157886505127 secs
+training time: 0.48053884506225586 secs
+training time: 0.818925142288208 secs
+training time: 1.6780779361724854 secs
+training time: 2.2650349140167236 secs
+training time: 2.600121021270752 secs
+training time: 3.1784110069274902 secs
+training time: 4.166896820068359 secs
+training time: 5.021317958831787 secs
+training time: 5.674767732620239 secs
+training time: 0.21976184844970703 secs
+training time: 0.6063380241394043 secs
+training time: 0.9855296611785889 secs
+training time: 1.559678077697754 secs
+training time: 2.407754898071289 secs
+training time: 3.1203508377075195 secs
+training time: 2.9972269535064697 secs
+training time: 3.6706387996673584 secs
+training time: 4.181717157363892 secs
+training time: 4.905871152877808 secs
+training time: 0.20825409889221191 secs
+training time: 0.462385892868042 secs
+training time: 0.804650068283081 secs
+training time: 1.3306779861450195 secs
+training time: 1.898346185684204 secs
+training time: 2.4521660804748535 secs
+training time: 3.0206570625305176 secs
+training time: 3.542757749557495 secs
+training time: 4.270867824554443 secs
+training time: 4.803194999694824 secs
+training time: 0.2115631103515625 secs
+training time: 0.45845484733581543 secs
+training time: 0.8043830394744873 secs
+training time: 1.2909700870513916 secs
+training time: 1.914335012435913 secs
+training time: 2.4581480026245117 secs
+training time: 3.2064602375030518 secs
+training time: 4.538992166519165 secs
+training time: 4.250126123428345 secs
+training time: 4.884260892868042 secs
+training time: 0.21492505073547363 secs
+training time: 0.4707069396972656 secs
+training time: 0.8339152336120605 secs
+training time: 1.3210046291351318 secs
+training time: 1.8881170749664307 secs
+training time: 2.4308109283447266 secs
+training time: 2.934433937072754 secs
+training time: 3.540699005126953 secs
+training time: 4.1797051429748535 secs
+training time: 4.969403028488159 secs
+training time: 0.21691012382507324 secs
+training time: 0.48279404640197754 secs
+training time: 0.845919132232666 secs
+training time: 1.3185269832611084 secs
+training time: 1.8331458568572998 secs
+training time: 2.4278452396392822 secs
+training time: 3.157219886779785 secs
+training time: 4.346110820770264 secs
+training time: 4.689993858337402 secs
+training time: 7.200383901596069 secs
+training time: 0.2117938995361328 secs
+training time: 0.4860103130340576 secs
+training time: 0.7997758388519287 secs
+training time: 1.2933943271636963 secs
+training time: 1.8563311100006104 secs
+training time: 2.354461908340454 secs
+training time: 2.9491472244262695 secs
+training time: 3.632911205291748 secs
+training time: 4.251333951950073 secs
+training time: 4.83088493347168 secs
+training time: 0.21705412864685059 secs
+training time: 0.45660996437072754 secs
+training time: 0.8167660236358643 secs
+training time: 1.3153269290924072 secs
+training time: 1.8418097496032715 secs
+training time: 2.408078670501709 secs
+training time: 2.949147939682007 secs
+training time: 3.6972339153289795 secs
+training time: 4.181336164474487 secs
+training time: 4.813836097717285 secs
+get_learning_curve execution time: 249.104287 secs
+training time: 0.2122359275817871 secs
+training time: 0.47718381881713867 secs
+training time: 1.0199189186096191 secs
+training time: 1.6426470279693604 secs
+training time: 1.9261400699615479 secs
+training time: 2.453402042388916 secs
+training time: 3.076690196990967 secs
+training time: 3.6186580657958984 secs
+training time: 4.143294811248779 secs
+training time: 4.928246974945068 secs
+get_learning_curve execution time: 24.180153 secs
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 SVM.py
+training time: 0.21757888793945312 secs
+training time: 0.48421382904052734 secs
+training time: 0.8845009803771973 secs
+training time: 1.6143758296966553 secs
+training time: 2.291563034057617 secs
+training time: 3.4007532596588135 secs
+training time: 3.481275796890259 secs
+training time: 4.334754943847656 secs
+training time: 5.9672651290893555 secs
+training time: 7.073860168457031 secs
+training time: 0.22527480125427246 secs
+training time: 0.5186638832092285 secs
+training time: 1.0754590034484863 secs
+training time: 1.4959030151367188 secs
+training time: 2.0666768550872803 secs
+training time: 2.7177600860595703 secs
+training time: 3.3345391750335693 secs
+training time: 4.004961967468262 secs
+training time: 4.715794324874878 secs
+training time: 5.386530876159668 secs
+training time: 0.23206400871276855 secs
+training time: 0.504019021987915 secs
+training time: 0.9233572483062744 secs
+training time: 1.4167509078979492 secs
+training time: 2.1122140884399414 secs
+training time: 3.052402973175049 secs
+training time: 3.349799156188965 secs
+training time: 4.174393177032471 secs
+training time: 4.455296754837036 secs
+training time: 5.291274070739746 secs
+training time: 0.22533774375915527 secs
+training time: 0.48095703125 secs
+training time: 0.8988428115844727 secs
+training time: 1.3950889110565186 secs
+training time: 1.9938640594482422 secs
+training time: 2.6541335582733154 secs
+training time: 3.1738641262054443 secs
+training time: 3.8417038917541504 secs
+training time: 4.404220104217529 secs
+training time: 5.225322008132935 secs
+training time: 0.21023988723754883 secs
+training time: 0.48580217361450195 secs
+training time: 0.8257632255554199 secs
+training time: 1.413071870803833 secs
+training time: 1.9939219951629639 secs
+training time: 2.5792949199676514 secs
+training time: 3.1512858867645264 secs
+training time: 3.6713032722473145 secs
+training time: 4.132919073104858 secs
+training time: 4.9105308055877686 secs
+training time: 0.22448086738586426 secs
+training time: 0.5622179508209229 secs
+training time: 0.8129186630249023 secs
+training time: 1.2691659927368164 secs
+training time: 1.885227918624878 secs
+training time: 2.6191890239715576 secs
+training time: 3.134936809539795 secs
+training time: 3.5760977268218994 secs
+training time: 4.2819788455963135 secs
+training time: 4.900250673294067 secs
+training time: 0.21515703201293945 secs
+training time: 0.4563910961151123 secs
+training time: 0.7927539348602295 secs
+training time: 1.3116600513458252 secs
+training time: 1.9516780376434326 secs
+training time: 2.478379011154175 secs
+training time: 2.9320449829101562 secs
+training time: 3.5990500450134277 secs
+training time: 4.181370735168457 secs
+training time: 4.963134050369263 secs
+training time: 0.21159577369689941 secs
+training time: 0.46763110160827637 secs
+training time: 0.7906980514526367 secs
+training time: 1.3294379711151123 secs
+training time: 1.9584813117980957 secs
+training time: 2.3795769214630127 secs
+training time: 2.961195230484009 secs
+training time: 3.622775077819824 secs
+training time: 4.196578025817871 secs
+training time: 5.004364013671875 secs
+training time: 0.21285700798034668 secs
+training time: 0.45992112159729004 secs
+training time: 0.8053021430969238 secs
+training time: 1.3282859325408936 secs
+training time: 1.8520610332489014 secs
+training time: 2.399683952331543 secs
+training time: 2.9495012760162354 secs
+training time: 3.60628080368042 secs
+training time: 4.134575128555298 secs
+training time: 4.997910022735596 secs
+training time: 0.2072587013244629 secs
+training time: 0.4573068618774414 secs
+training time: 0.8001329898834229 secs
+training time: 1.316978931427002 secs
+training time: 1.8219420909881592 secs
+training time: 2.3652710914611816 secs
+training time: 2.9532079696655273 secs
+training time: 3.5616159439086914 secs
+training time: 4.26359486579895 secs
+training time: 4.89323091506958 secs
+get_learning_curve execution time: 249.552189 secs
+training time: 0.5681681632995605 secs
+training time: 2.219923973083496 secs
+training time: 5.6359779834747314 secs
+training time: 10.123930931091309 secs
+training time: 14.995040893554688 secs
+training time: 23.87975311279297 secs
+training time: 29.150294065475464 secs
+training time: 38.275046825408936 secs
+training time: 48.84101891517639 secs
+training time: 60.931655168533325 secs
+training time: 0.5341570377349854 secs
+training time: 2.269835948944092 secs
+training time: 5.74202823638916 secs
+training time: 9.458209991455078 secs
+training time: 16.882374048233032 secs
+training time: 22.25204086303711 secs
+training time: 29.05967092514038 secs
+training time: 38.775691986083984 secs
+training time: 54.61159563064575 secs
+training time: 67.6245949268341 secs
+training time: 0.5757648944854736 secs
+training time: 2.1837871074676514 secs
+training time: 5.258443832397461 secs
+training time: 9.344849109649658 secs
+training time: 16.5754451751709 secs
+training time: 22.49661111831665 secs
+training time: 32.69652581214905 secs
+training time: 43.003134965896606 secs
+training time: 55.28028893470764 secs
+training time: 67.55438423156738 secs
+training time: 0.5997922420501709 secs
+training time: 2.3084449768066406 secs
+training time: 5.6078410148620605 secs
+training time: 10.21898102760315 secs
+training time: 14.773680210113525 secs
+training time: 22.29454016685486 secs
+training time: 32.903921127319336 secs
+training time: 38.31892013549805 secs
+training time: 54.55645489692688 secs
+training time: 60.89136576652527 secs
+training time: 0.5418469905853271 secs
+training time: 2.154365062713623 secs
+training time: 5.749546051025391 secs
+training time: 9.307149171829224 secs
+training time: 16.78400492668152 secs
+training time: 22.129451036453247 secs
+training time: 29.395838975906372 secs
+training time: 64.17449879646301 secs
+training time: 72.79065203666687 secs
+training time: 90.15123891830444 secs
+get_learning_curve execution time: 2644.444030 secs
+training time: 0.2789149284362793 secs
+training time: 0.6148359775543213 secs
+training time: 1.4400429725646973 secs
+training time: 2.2216382026672363 secs
+training time: 2.671032190322876 secs
+training time: 3.7261807918548584 secs
+training time: 4.396991014480591 secs
+training time: 5.201014995574951 secs
+training time: 6.237342119216919 secs
+training time: 7.099586009979248 secs
+training time: 0.24385309219360352 secs
+training time: 0.6043429374694824 secs
+training time: 1.1701960563659668 secs
+training time: 2.358778238296509 secs
+training time: 2.7515499591827393 secs
+training time: 3.5194664001464844 secs
+training time: 4.424957275390625 secs
+training time: 5.257435083389282 secs
+training time: 6.241032123565674 secs
+training time: 7.161226987838745 secs
+training time: 0.25061702728271484 secs
+training time: 0.6545031070709229 secs
+training time: 1.2173082828521729 secs
+training time: 1.8871610164642334 secs
+training time: 2.7704520225524902 secs
+training time: 3.424514055252075 secs
+training time: 4.397413969039917 secs
+training time: 5.27969217300415 secs
+training time: 6.10630989074707 secs
+training time: 7.130402088165283 secs
+training time: 0.2549259662628174 secs
+training time: 0.6313250064849854 secs
+training time: 1.1692280769348145 secs
+training time: 1.9023642539978027 secs
+training time: 2.968656063079834 secs
+training time: 3.5670671463012695 secs
+training time: 4.258492946624756 secs
+training time: 5.230765104293823 secs
+training time: 6.229681968688965 secs
+training time: 7.194736957550049 secs
+training time: 0.24645304679870605 secs
+training time: 0.6235051155090332 secs
+training time: 1.155940055847168 secs
+training time: 1.9504640102386475 secs
+training time: 2.6860668659210205 secs
+training time: 3.542100191116333 secs
+training time: 4.398851156234741 secs
+training time: 5.37849497795105 secs
+training time: 6.24860405921936 secs
+training time: 7.204823970794678 secs
+training time: 0.24138402938842773 secs
+training time: 0.6078951358795166 secs
+training time: 1.1949670314788818 secs
+training time: 1.9334580898284912 secs
+training time: 2.6853229999542236 secs
+training time: 3.6328301429748535 secs
+training time: 4.417917251586914 secs
+training time: 5.2850611209869385 secs
+training time: 6.270769119262695 secs
+training time: 7.154324054718018 secs
+training time: 0.2443220615386963 secs
+training time: 0.642503023147583 secs
+training time: 1.2355589866638184 secs
+training time: 1.8887927532196045 secs
+training time: 2.7575910091400146 secs
+training time: 3.652200937271118 secs
+training time: 4.410709857940674 secs
+training time: 5.225292682647705 secs
+training time: 6.091321229934692 secs
+training time: 7.338550090789795 secs
+training time: 0.2502479553222656 secs
+training time: 0.6575751304626465 secs
+training time: 1.1566729545593262 secs
+training time: 1.8655407428741455 secs
+training time: 2.99080491065979 secs
+training time: 3.5547521114349365 secs
+training time: 4.344931125640869 secs
+training time: 5.438035249710083 secs
+training time: 6.161404848098755 secs
+training time: 7.1431097984313965 secs
+training time: 0.2443387508392334 secs
+training time: 0.6404259204864502 secs
+training time: 1.1764991283416748 secs
+training time: 1.927764892578125 secs
+training time: 2.6985552310943604 secs
+training time: 3.6299712657928467 secs
+training time: 4.314863920211792 secs
+training time: 5.251276016235352 secs
+training time: 6.175213813781738 secs
+training time: 7.5959742069244385 secs
+training time: 0.24199295043945312 secs
+training time: 0.6041538715362549 secs
+training time: 1.1840200424194336 secs
+training time: 1.986569881439209 secs
+training time: 2.672764778137207 secs
+training time: 3.5831148624420166 secs
+training time: 4.377094984054565 secs
+training time: 5.142708778381348 secs
+training time: 6.787314176559448 secs
+training time: 7.705323934555054 secs
+get_learning_curve execution time: 344.422098 secs
+training time: 0.8686459064483643 secs
+training time: 3.3541886806488037 secs
+training time: 7.9539549350738525 secs
+training time: 15.603243112564087 secs
+training time: 21.8994197845459 secs
+training time: 35.78264284133911 secs
+training time: 43.37680220603943 secs
+training time: 56.51424980163574 secs
+training time: 73.18185496330261 secs
+training time: 101.55430912971497 secs
+training time: 0.7574038505554199 secs
+training time: 3.4293229579925537 secs
+training time: 7.830605983734131 secs
+training time: 14.105257987976074 secs
+training time: 22.28069829940796 secs
+training time: 32.44245672225952 secs
+training time: 48.91028308868408 secs
+training time: 57.583510875701904 secs
+training time: 73.42506527900696 secs
+training time: 99.90778279304504 secs
+training time: 0.8598289489746094 secs
+training time: 3.2348692417144775 secs
+training time: 7.692929983139038 secs
+training time: 13.84465503692627 secs
+training time: 21.748237133026123 secs
+training time: 33.36990523338318 secs
+training time: 43.47688293457031 secs
+training time: 56.468103885650635 secs
+training time: 73.7050232887268 secs
+training time: 100.9267246723175 secs
+training time: 0.8599240779876709 secs
+training time: 3.58963680267334 secs
+training time: 8.32516598701477 secs
+training time: 14.031040906906128 secs
+training time: 22.00199604034424 secs
+training time: 33.822508811950684 secs
+training time: 43.90184497833252 secs
+training time: 63.04446792602539 secs
+training time: 73.85758805274963 secs
+training time: 89.76392388343811 secs
+training time: 0.8166580200195312 secs
+training time: 3.2453339099884033 secs
+training time: 8.708441734313965 secs
+training time: 13.64189100265503 secs
+training time: 21.59790301322937 secs
+training time: 32.48670983314514 secs
+training time: 44.047354221343994 secs
+training time: 56.69800400733948 secs
+training time: 72.85215401649475 secs
+training time: 90.69613790512085 secs
+get_learning_curve execution time: 3603.376226 secs
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 kNN.py
+Running 1-NN
+training time: 0.0039942264556884766 secs
+training time: 0.00047326087951660156 secs
+training time: 0.0005140304565429688 secs
+training time: 0.000476837158203125 secs
+training time: 0.0004930496215820312 secs
+training time: 0.0004961490631103516 secs
+training time: 0.0006778240203857422 secs
+training time: 0.0008080005645751953 secs
+training time: 0.0006737709045410156 secs
+training time: 0.0007417201995849609 secs
+training time: 0.00045990943908691406 secs
+training time: 0.0007259845733642578 secs
+training time: 0.0005190372467041016 secs
+training time: 0.0007030963897705078 secs
+training time: 0.00048613548278808594 secs
+training time: 0.0004940032958984375 secs
+training time: 0.0005240440368652344 secs
+training time: 0.0008809566497802734 secs
+training time: 0.0006558895111083984 secs
+training time: 0.0008180141448974609 secs
+training time: 0.0015060901641845703 secs
+training time: 0.00045299530029296875 secs
+training time: 0.0004811286926269531 secs
+training time: 0.0004711151123046875 secs
+training time: 0.0004909038543701172 secs
+training time: 0.0006520748138427734 secs
+training time: 0.0006792545318603516 secs
+training time: 0.0007967948913574219 secs
+training time: 0.0011587142944335938 secs
+training time: 0.0005917549133300781 secs
+training time: 0.0004429817199707031 secs
+training time: 0.0006580352783203125 secs
+training time: 0.0005402565002441406 secs
+training time: 0.0006330013275146484 secs
+training time: 0.0004858970642089844 secs
+training time: 0.0006201267242431641 secs
+training time: 0.0005528926849365234 secs
+training time: 0.0005309581756591797 secs
+training time: 0.0008509159088134766 secs
+training time: 0.0008189678192138672 secs
+training time: 0.00046372413635253906 secs
+training time: 0.0004458427429199219 secs
+training time: 0.00047016143798828125 secs
+training time: 0.0006229877471923828 secs
+training time: 0.0008139610290527344 secs
+training time: 0.0007050037384033203 secs
+training time: 0.000926971435546875 secs
+training time: 0.0005841255187988281 secs
+training time: 0.0005466938018798828 secs
+training time: 0.0005710124969482422 secs
+training time: 0.0005707740783691406 secs
+training time: 0.0005159378051757812 secs
+training time: 0.0007071495056152344 secs
+training time: 0.0005557537078857422 secs
+training time: 0.0004961490631103516 secs
+training time: 0.0005099773406982422 secs
+training time: 0.0005309581756591797 secs
+training time: 0.0009999275207519531 secs
+training time: 0.0006740093231201172 secs
+training time: 0.0006110668182373047 secs
+training time: 0.0004792213439941406 secs
+training time: 0.00045490264892578125 secs
+training time: 0.0005059242248535156 secs
+training time: 0.000492095947265625 secs
+training time: 0.0007150173187255859 secs
+training time: 0.0010328292846679688 secs
+training time: 0.0006070137023925781 secs
+training time: 0.0005471706390380859 secs
+training time: 0.0005409717559814453 secs
+training time: 0.0005700588226318359 secs
+training time: 0.00044918060302734375 secs
+training time: 0.0008139610290527344 secs
+training time: 0.0005550384521484375 secs
+training time: 0.0006940364837646484 secs
+training time: 0.0005350112915039062 secs
+training time: 0.0005099773406982422 secs
+training time: 0.0006170272827148438 secs
+training time: 0.0008208751678466797 secs
+training time: 0.0006957054138183594 secs
+training time: 0.0009131431579589844 secs
+training time: 0.00047087669372558594 secs
+training time: 0.0004470348358154297 secs
+training time: 0.000453948974609375 secs
+training time: 0.0004639625549316406 secs
+training time: 0.001378774642944336 secs
+training time: 0.0005950927734375 secs
+training time: 0.0006320476531982422 secs
+training time: 0.0005779266357421875 secs
+training time: 0.0008041858673095703 secs
+training time: 0.00125885009765625 secs
+training time: 0.0004448890686035156 secs
+training time: 0.0015130043029785156 secs
+training time: 0.000492095947265625 secs
+training time: 0.000675201416015625 secs
+training time: 0.0005638599395751953 secs
+training time: 0.0004999637603759766 secs
+training time: 0.0005359649658203125 secs
+training time: 0.0005309581756591797 secs
+training time: 0.001508951187133789 secs
+training time: 0.0006127357482910156 secs
+get_learning_curve execution time: 0.456395 secs
+Running 3-NN
+training time: 0.0005030632019042969 secs
+training time: 0.0004489421844482422 secs
+training time: 0.0006132125854492188 secs
+training time: 0.0005979537963867188 secs
+training time: 0.0006241798400878906 secs
+training time: 0.0006279945373535156 secs
+training time: 0.0006129741668701172 secs
+training time: 0.0005440711975097656 secs
+training time: 0.0005590915679931641 secs
+training time: 0.0006771087646484375 secs
+training time: 0.000659942626953125 secs
+training time: 0.0005359649658203125 secs
+training time: 0.000514984130859375 secs
+training time: 0.0005009174346923828 secs
+training time: 0.0006499290466308594 secs
+training time: 0.0006389617919921875 secs
+training time: 0.0006031990051269531 secs
+training time: 0.0007669925689697266 secs
+training time: 0.0007140636444091797 secs
+training time: 0.0005881786346435547 secs
+training time: 0.0004611015319824219 secs
+training time: 0.00044083595275878906 secs
+training time: 0.0010538101196289062 secs
+training time: 0.0008549690246582031 secs
+training time: 0.0006928443908691406 secs
+training time: 0.0004990100860595703 secs
+training time: 0.0006492137908935547 secs
+training time: 0.0005338191986083984 secs
+training time: 0.0006139278411865234 secs
+training time: 0.000701904296875 secs
+training time: 0.0006611347198486328 secs
+training time: 0.0005371570587158203 secs
+training time: 0.0004911422729492188 secs
+training time: 0.0004868507385253906 secs
+training time: 0.0009257793426513672 secs
+training time: 0.0006697177886962891 secs
+training time: 0.0007617473602294922 secs
+training time: 0.0005478858947753906 secs
+training time: 0.0005481243133544922 secs
+training time: 0.0007770061492919922 secs
+training time: 0.0006589889526367188 secs
+training time: 0.0006699562072753906 secs
+training time: 0.0009300708770751953 secs
+training time: 0.0007860660552978516 secs
+training time: 0.0007801055908203125 secs
+training time: 0.0016567707061767578 secs
+training time: 0.0010941028594970703 secs
+training time: 0.0017452239990234375 secs
+training time: 0.0006952285766601562 secs
+training time: 0.0012688636779785156 secs
+training time: 0.0006339550018310547 secs
+training time: 0.0010211467742919922 secs
+training time: 0.0009639263153076172 secs
+training time: 0.0012857913970947266 secs
+training time: 0.0004899501800537109 secs
+training time: 0.0005609989166259766 secs
+training time: 0.0016760826110839844 secs
+training time: 0.0005671977996826172 secs
+training time: 0.0005497932434082031 secs
+training time: 0.0005981922149658203 secs
+training time: 0.0006232261657714844 secs
+training time: 0.0007863044738769531 secs
+training time: 0.0009469985961914062 secs
+training time: 0.0005543231964111328 secs
+training time: 0.0004930496215820312 secs
+training time: 0.0005118846893310547 secs
+training time: 0.0005550384521484375 secs
+training time: 0.0007190704345703125 secs
+training time: 0.0007758140563964844 secs
+training time: 0.0017421245574951172 secs
+training time: 0.0005502700805664062 secs
+training time: 0.0006868839263916016 secs
+training time: 0.0010161399841308594 secs
+training time: 0.0010607242584228516 secs
+training time: 0.0010161399841308594 secs
+training time: 0.0007412433624267578 secs
+training time: 0.0009491443634033203 secs
+training time: 0.0009179115295410156 secs
+training time: 0.0005702972412109375 secs
+training time: 0.0006132125854492188 secs
+training time: 0.00051116943359375 secs
+training time: 0.0005090236663818359 secs
+training time: 0.0011169910430908203 secs
+training time: 0.0013458728790283203 secs
+training time: 0.00048422813415527344 secs
+training time: 0.0004889965057373047 secs
+training time: 0.0006721019744873047 secs
+training time: 0.0006680488586425781 secs
+training time: 0.0008051395416259766 secs
+training time: 0.0006020069122314453 secs
+training time: 0.00044798851013183594 secs
+training time: 0.0005049705505371094 secs
+training time: 0.0004711151123046875 secs
+training time: 0.0005891323089599609 secs
+training time: 0.0006189346313476562 secs
+training time: 0.0005812644958496094 secs
+training time: 0.0006101131439208984 secs
+training time: 0.0005388259887695312 secs
+training time: 0.000698089599609375 secs
+training time: 0.0012691020965576172 secs
+get_learning_curve execution time: 0.529154 secs
+Running 8-NN
+training time: 0.0009160041809082031 secs
+training time: 0.0013689994812011719 secs
+training time: 0.0005850791931152344 secs
+training time: 0.0004899501800537109 secs
+training time: 0.0008399486541748047 secs
+training time: 0.0010790824890136719 secs
+training time: 0.0011069774627685547 secs
+training time: 0.0012290477752685547 secs
+training time: 0.0016148090362548828 secs
+training time: 0.0010640621185302734 secs
+training time: 0.0009739398956298828 secs
+training time: 0.0005950927734375 secs
+training time: 0.0005786418914794922 secs
+training time: 0.001226186752319336 secs
+training time: 0.0007967948913574219 secs
+training time: 0.0009288787841796875 secs
+training time: 0.0012712478637695312 secs
+training time: 0.0007128715515136719 secs
+training time: 0.0006630420684814453 secs
+training time: 0.0005886554718017578 secs
+training time: 0.0006961822509765625 secs
+training time: 0.0005030632019042969 secs
+training time: 0.0007312297821044922 secs
+training time: 0.0005252361297607422 secs
+training time: 0.0007641315460205078 secs
+training time: 0.0008630752563476562 secs
+training time: 0.0009191036224365234 secs
+training time: 0.001371145248413086 secs
+training time: 0.0006039142608642578 secs
+training time: 0.0007050037384033203 secs
+training time: 0.00047087669372558594 secs
+training time: 0.0009808540344238281 secs
+training time: 0.0008339881896972656 secs
+training time: 0.0008578300476074219 secs
+training time: 0.0004961490631103516 secs
+training time: 0.0008158683776855469 secs
+training time: 0.0008440017700195312 secs
+training time: 0.001069784164428711 secs
+training time: 0.0006515979766845703 secs
+training time: 0.0010669231414794922 secs
+training time: 0.0006198883056640625 secs
+training time: 0.0005922317504882812 secs
+training time: 0.0004999637603759766 secs
+training time: 0.0005691051483154297 secs
+training time: 0.0004940032958984375 secs
+training time: 0.0009160041809082031 secs
+training time: 0.0015020370483398438 secs
+training time: 0.0006380081176757812 secs
+training time: 0.0005559921264648438 secs
+training time: 0.0006339550018310547 secs
+training time: 0.0005071163177490234 secs
+training time: 0.0005688667297363281 secs
+training time: 0.00047898292541503906 secs
+training time: 0.0006151199340820312 secs
+training time: 0.0005340576171875 secs
+training time: 0.0005028247833251953 secs
+training time: 0.0016109943389892578 secs
+training time: 0.0006649494171142578 secs
+training time: 0.0006339550018310547 secs
+training time: 0.0006949901580810547 secs
+training time: 0.00047898292541503906 secs
+training time: 0.0005278587341308594 secs
+training time: 0.0006620883941650391 secs
+training time: 0.0007181167602539062 secs
+training time: 0.0005638599395751953 secs
+training time: 0.0005238056182861328 secs
+training time: 0.0005331039428710938 secs
+training time: 0.0006361007690429688 secs
+training time: 0.0005710124969482422 secs
+training time: 0.001249074935913086 secs
+training time: 0.0005829334259033203 secs
+training time: 0.00047779083251953125 secs
+training time: 0.001013040542602539 secs
+training time: 0.0004928112030029297 secs
+training time: 0.0006680488586425781 secs
+training time: 0.0008308887481689453 secs
+training time: 0.001280069351196289 secs
+training time: 0.0009500980377197266 secs
+training time: 0.0015180110931396484 secs
+training time: 0.0012280941009521484 secs
+training time: 0.0010821819305419922 secs
+training time: 0.0013079643249511719 secs
+training time: 0.0008921623229980469 secs
+training time: 0.0011398792266845703 secs
+training time: 0.0011050701141357422 secs
+training time: 0.0011892318725585938 secs
+training time: 0.0012979507446289062 secs
+training time: 0.0010120868682861328 secs
+training time: 0.0007328987121582031 secs
+training time: 0.0009479522705078125 secs
+training time: 0.00047278404235839844 secs
+training time: 0.00047326087951660156 secs
+training time: 0.0007560253143310547 secs
+training time: 0.0005190372467041016 secs
+training time: 0.0005700588226318359 secs
+training time: 0.00074005126953125 secs
+training time: 0.0005450248718261719 secs
+training time: 0.0005488395690917969 secs
+training time: 0.0005738735198974609 secs
+training time: 0.0006148815155029297 secs
+get_learning_curve execution time: 0.621710 secs
+Running 15-NN
+training time: 0.0007669925689697266 secs
+training time: 0.0007669925689697266 secs
+training time: 0.0005040168762207031 secs
+training time: 0.000476837158203125 secs
+training time: 0.0007829666137695312 secs
+training time: 0.0010118484497070312 secs
+training time: 0.0006029605865478516 secs
+training time: 0.0008220672607421875 secs
+training time: 0.0006458759307861328 secs
+training time: 0.0005738735198974609 secs
+training time: 0.0006890296936035156 secs
+training time: 0.0005481243133544922 secs
+training time: 0.0005381107330322266 secs
+training time: 0.0010039806365966797 secs
+training time: 0.000514984130859375 secs
+training time: 0.0007109642028808594 secs
+training time: 0.000888824462890625 secs
+training time: 0.0006830692291259766 secs
+training time: 0.0006039142608642578 secs
+training time: 0.0005970001220703125 secs
+training time: 0.00045490264892578125 secs
+training time: 0.0004558563232421875 secs
+training time: 0.0005331039428710938 secs
+training time: 0.0010080337524414062 secs
+training time: 0.00049591064453125 secs
+training time: 0.0005681514739990234 secs
+training time: 0.0005860328674316406 secs
+training time: 0.0006198883056640625 secs
+training time: 0.00096893310546875 secs
+training time: 0.0005741119384765625 secs
+training time: 0.0006577968597412109 secs
+training time: 0.0007832050323486328 secs
+training time: 0.0006229877471923828 secs
+training time: 0.0007560253143310547 secs
+training time: 0.0005159378051757812 secs
+training time: 0.0005166530609130859 secs
+training time: 0.0005300045013427734 secs
+training time: 0.0005629062652587891 secs
+training time: 0.0010182857513427734 secs
+training time: 0.0005970001220703125 secs
+training time: 0.000576019287109375 secs
+training time: 0.0005171298980712891 secs
+training time: 0.0004673004150390625 secs
+training time: 0.0006430149078369141 secs
+training time: 0.0007791519165039062 secs
+training time: 0.0015659332275390625 secs
+training time: 0.0010077953338623047 secs
+training time: 0.0010600090026855469 secs
+training time: 0.0006091594696044922 secs
+training time: 0.0005550384521484375 secs
+training time: 0.0004949569702148438 secs
+training time: 0.0009088516235351562 secs
+training time: 0.0009980201721191406 secs
+training time: 0.0005309581756591797 secs
+training time: 0.0004832744598388672 secs
+training time: 0.0005011558532714844 secs
+training time: 0.0007319450378417969 secs
+training time: 0.0009768009185791016 secs
+training time: 0.0006668567657470703 secs
+training time: 0.0005917549133300781 secs
+training time: 0.0005309581756591797 secs
+training time: 0.0010256767272949219 secs
+training time: 0.0005171298980712891 secs
+training time: 0.0006530284881591797 secs
+training time: 0.0012199878692626953 secs
+training time: 0.0009450912475585938 secs
+training time: 0.0011720657348632812 secs
+training time: 0.0010471343994140625 secs
+training time: 0.0010890960693359375 secs
+training time: 0.0012240409851074219 secs
+training time: 0.0011258125305175781 secs
+training time: 0.0011279582977294922 secs
+training time: 0.0009579658508300781 secs
+training time: 0.0011260509490966797 secs
+training time: 0.0006630420684814453 secs
+training time: 0.0005559921264648438 secs
+training time: 0.0005707740783691406 secs
+training time: 0.0007760524749755859 secs
+training time: 0.0007050037384033203 secs
+training time: 0.0012922286987304688 secs
+training time: 0.0004909038543701172 secs
+training time: 0.0007331371307373047 secs
+training time: 0.00047469139099121094 secs
+training time: 0.00138092041015625 secs
+training time: 0.0005328655242919922 secs
+training time: 0.0007250308990478516 secs
+training time: 0.0007150173187255859 secs
+training time: 0.00131988525390625 secs
+training time: 0.0012359619140625 secs
+training time: 0.0011830329895019531 secs
+training time: 0.0005240440368652344 secs
+training time: 0.00045013427734375 secs
+training time: 0.0011110305786132812 secs
+training time: 0.0011966228485107422 secs
+training time: 0.0009751319885253906 secs
+training time: 0.0010480880737304688 secs
+training time: 0.0013089179992675781 secs
+training time: 0.0015082359313964844 secs
+training time: 0.0009291172027587891 secs
+training time: 0.0010561943054199219 secs
+get_learning_curve execution time: 0.656511 secs
+Running 40-NN
+training time: 0.0006468296051025391 secs
+Traceback (most recent call last):
+  File "kNN.py", line 133, in <module>
+    main()
+  File "kNN.py", line 128, in main
+    run_knn()
+  File "kNN.py", line 39, in run_knn
+    a, b, c = get_learning_curve(knn, tx, ty, vx, vy, cv=10, train_sizes=ts)
+  File "/Users/Jphild/Documents/Courses/Georgia Tech/Machine Learning/Assignment 1/utilities.py", line 28, in timed_function
+    output = func(*args, **kwargs)
+  File "/Users/Jphild/Documents/Courses/Georgia Tech/Machine Learning/Assignment 1/utilities.py", line 70, in get_learning_curve
+    current_train_score = estimator.score(subx, suby)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/base.py", line 349, in score
+    return accuracy_score(y, self.predict(X), sample_weight=sample_weight)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/neighbors/classification.py", line 145, in predict
+    neigh_dist, neigh_ind = self.kneighbors(X)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/sklearn/neighbors/base.py", line 347, in kneighbors
+    (train_size, n_neighbors)
+ValueError: Expected n_neighbors <= n_samples,  but n_samples = 39, n_neighbors = 40
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 kNN.py
+Jamess-MacBook-Pro:Assignment 1 Jphild$ python3 kNN.py
+Jamess-MacBook-Pro:Assignment 1 Jphild$ 
