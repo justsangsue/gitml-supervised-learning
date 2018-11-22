@@ -2,21 +2,6 @@ To be able to run this code you will need Python 3.6 to be installed.
 
 All code assumes that the working directory is this file, README.txt resides. The structure of the folder is assumed to be as follows.
 
-All code is in the folder called "jwang3013".
-
-  jwang2013
-  │   utilities.py
-  |   ClinvarDataProcessing.py
-  |   MedicalCostDataProcessing.py
-  |   DecisionTree.py
-  |   AdaBoost.py
-  |   kNN.py
-  |   SVM.py
-  |   NeuralNetworks.py
-  │   README.txt
-  │   jwang3013-analysis.pdf
-
-
 The following Python packages are also required:
 
 *  csv
